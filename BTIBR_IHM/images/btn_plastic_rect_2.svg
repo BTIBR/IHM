@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="85.99px" viewBox="0 0 85.99 85.99" width="85.99px" version="1.1" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 85.99 85.99">
+<path id="bgColor00" d="m0.004 85.99v-85.99h85.986v85.988l-85.986 0.002z" fill="#D85B07"/>
+<linearGradient id="path4947_2_" y2="-862.61" gradientUnits="userSpaceOnUse" x2="273.94" gradientTransform="matrix(1 0 0 -1 -272.95 -819.61)" y1="-862.61" x1="358.94">
+	<stop stop-opacity=".8" offset="0"/>
+	<stop stop-opacity="0" offset=".0485"/>
+	<stop stop-color="#fff" stop-opacity="0" offset=".9576"/>
+	<stop stop-color="#fff" stop-opacity=".65" offset="1"/>
+</linearGradient>
+<path opacity=".63" d="m0.004 85.99v-85.99h85.986v85.988l-85.986 0.002z" enable-background="new    " fill="url(#path4947_2_)"/>
+<linearGradient id="path4947_3_" y2="657.12" gradientUnits="userSpaceOnUse" x2="115.66" gradientTransform="translate(-115.46 -571.34)" y1="571.44" x1="201.34">
+	<stop stop-opacity=".42" offset="0"/>
+	<stop stop-opacity="0" offset=".0485"/>
+	<stop stop-color="#fff" stop-opacity="0" offset=".9576"/>
+	<stop stop-color="#fff" stop-opacity=".49" offset="1"/>
+</linearGradient>
+<path opacity=".3" d="m0.004 85.99v-85.99h85.986v85.988c0-0.001-85.986 0.002-85.986 0.002z" enable-background="new    " fill="url(#path4947_3_)"/>
+<linearGradient id="path4936_1_" y2="-819.59" gradientUnits="userSpaceOnUse" x2="315.95" gradientTransform="matrix(1 0 0 -1 -272.95 -819.61)" y1="-905.1" x1="315.95">
+	<stop stop-opacity=".8" offset="0"/>
+	<stop stop-opacity="0" offset=".0485"/>
+	<stop stop-color="#fff" stop-opacity="0" offset=".9455"/>
+	<stop stop-color="#fff" stop-opacity=".65" offset="1"/>
+</linearGradient>
+<path opacity=".69" d="m0.004 85.99v-85.99h85.986v85.988l-85.986 0.002z" enable-background="new    " fill="url(#path4936_1_)"/>
+</svg>

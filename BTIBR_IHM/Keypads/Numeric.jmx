@@ -1,0 +1,89 @@
+<wgtPage projectType="HMI Project">
+ <object pageName="Numeric" pageType="keypad" pageSize="166,240" class="KeypadPageWgt" dataWndSize="0,70" downloadPrepDone="false" id="Numeric" staticOptEnable="false">
+  <wgtStyle width="166.00" x="0.00" y="0.00" cx="83.00" cy="120.00" height="240.00" ver="01.99.00.296"/>
+  <object class="ImageWgt" id="keypad_Icon">
+   <wgtStyle width="32.19" imagePath="images/ic_cn2_03.svg" enableCache="false" x="1.01" forcePaint="1" y="0.93" fill="rgb(23,30,40)" cx="16.00" cy="15.00" wgtStaticOpt="dynamic" height="30.58"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt1">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="0.00" y="64.01" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="37" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt2">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="41.00" y="64.01" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="38" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt3">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="82.00" y="64.01" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="39" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt4">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="123.00" y="64.01" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="0x01000000" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="8"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt5">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="123.00" y="99.22" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="2D" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt6">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="0.00" y="99.22" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="34" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt7">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="41.00" y="99.22" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="35" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt8">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="82.00" y="99.22" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="36" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt9">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="0.00" y="134.44" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="31" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt10">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="41.00" y="134.44" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="32" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt11">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="82.00" y="134.44" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="33" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt12">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="123.00" y="134.44" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="2B" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt13">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="0.00" y="169.65" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="30" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt15">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="82.00" y="169.65" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="2E" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt16">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="123.00" y="169.65" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="0x01000007" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="8"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt20">
+   <wgtStyle width="43.26" font-color="rgb(23,30,40)" x="122.74" y="203.93" fill="rgb(246,246,246)" font-family="Tahoma" cx="21.00" form="standard" cy="18.00" height="37.07" releasePath="images/btn_kbdwht_std_1_rev1.svg" key="0x01000005" needlePath="images/btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" font-size="8"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt26">
+   <wgtStyle font-family="Tahoma" cx="21.00" cy="18.00" shiftkey="0x01000012" x="0.00" y="203.93" key="0x01000012" image-color="rgb(23,30,40)" releasePath="images/btn_kbdwht_std_1_rev1.svg" value="0" needlePath="images/btn_kbdwht_std_2_rev1.svg" width="43.26" keyImage="images/ic_pl2_114.svg" fill="rgb(246,246,246)" altgrshiftkey="0x01000012" showImage="1" height="37.07" type="momentary" form="standard" altgrkey="0x01000012" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt25">
+   <wgtStyle font-family="Tahoma" cx="21.00" cy="18.00" shiftkey="0x01000014" x="81.50" y="203.93" key="0x01000014" image-color="rgb(23,30,40)" releasePath="images/btn_kbdwht_std_1_rev1.svg" value="0" needlePath="images/btn_kbdwht_std_2_rev1.svg" width="43.26" keyImage="images/ic_pl2_115.svg" fill="rgb(246,246,246)" altgrshiftkey="0x01000014" showImage="1" height="37.07" type="momentary" form="standard" altgrkey="0x01000014" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt27">
+   <wgtStyle font-family="Tahoma" cx="21.00" cy="18.00" shiftkey="0x01000013" x="41.00" y="169.65" key="0x01000013" image-color="rgb(23,30,40)" releasePath="images/btn_kbdwht_std_1_rev1.svg" value="0" needlePath="images/btn_kbdwht_std_2_rev1.svg" width="43.26" keyImage="images/ic_pl2_117.svg" fill="rgb(246,246,246)" altgrshiftkey="0x01000013" showImage="1" height="37.07" type="momentary" form="standard" altgrkey="0x01000013" font-size="12"/>
+  </object>
+  <object class="KeyButtonWgt" hmiStyle="type:btn" id="KeyButtonWgt28">
+   <wgtStyle font-family="Tahoma" cx="21.00" cy="18.00" shiftkey="0x01000015" x="41.25" y="203.93" key="0x01000015" image-color="rgb(23,30,40)" releasePath="images/btn_kbdwht_std_1_rev1.svg" value="0" needlePath="images/btn_kbdwht_std_2_rev1.svg" width="43.26" keyImage="images/ic_pl2_116_rev1.svg" fill="rgb(246,246,246)" altgrshiftkey="0x01000015" showImage="1" height="37.07" type="momentary" form="standard" altgrkey="0x01000015" font-size="12"/>
+  </object>
+  <object class="KeypadEditBoxWgt" id="keypad_Value">
+   <wgtStyle width="129.50" readWrite="true" x="34.21" y="1.00" font-family="Tahoma" fill="rgb(40,40,40)" cx="65.00" cy="15.00" height="30.51" alignment="right" vert-align="middle" text="Value" keypad-type="None" font-size="8" Color="rgb(192,192,192)"/>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="164.00" x="1.01" y="33.36" cx="82.00" cy="15.00" height="30.00"/>
+   <object class="KeypadShapeWgt" id="rect2">
+    <wgtStyle width="164.00" x="0.00" forcePaint="1" y="0.00" fill="rgb(170,170,170)" cx="21.39" cy="17.65" height="30.00" nodeName="rect"/>
+   </object>
+   <object class="KeypadLabelWgt" id="keypad_Text1">
+    <wgtStyle width="24.00" x="4.99" forcePaint="true" y="1.00" font-family="Tahoma" cx="12.00" cy="6.50" height="13.00" alignment="left" vert-align="top" text="Min:" keypad-type="None" font-size="8"/>
+   </object>
+   <object class="KeypadLabelWgt" id="keypad_Text2">
+    <wgtStyle width="29.00" x="4.99" forcePaint="true" y="14.00" font-family="Tahoma" cx="14.50" cy="6.50" height="13.00" alignment="left" vert-align="top" text="Max:" keypad-type="None" font-size="8"/>
+   </object>
+   <object class="KeypadLabelWgt" id="keypad_Min">
+    <wgtStyle width="120.00" x="36.99" forcePaint="true" y="1.00" font-family="Tahoma" fill="rgb(60,60,60)" cx="60.00" cy="8.00" height="16.00" alignment="right" vert-align="top" text="Min_" keypad-type="None" font-size="8"/>
+   </object>
+   <object class="KeypadLabelWgt" id="keypad_Max">
+    <wgtStyle width="120.00" x="36.99" forcePaint="true" y="14.00" font-family="Tahoma" fill="rgb(60,60,60)" cx="60.00" cy="8.00" height="16.00" alignment="right" vert-align="top" text="Max_" keypad-type="None" font-size="8"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

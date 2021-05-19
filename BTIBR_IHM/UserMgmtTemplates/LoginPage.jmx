@@ -1,0 +1,54 @@
+<wgtPage projectType="HMI Project">
+ <object pageName="LoginPage" pageSize="320,240" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" staticFile="images/LoginPage.png" id="LoginPage" staticOptEnable="true">
+  <wgtStyle width="320.00" x="0.00" y="0.00" cx="200.00" cy="200.00" height="240.00" ver="1800098"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" cx="0" cy="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="ImageWgt" id="image2" static="true">
+   <wgtStyle width="320.00" imagePath="images/login_bkg.svg" enableCache="false" x="0.00" y="0.00" cx="155.74" cy="115.59" height="240.00"/>
+  </object>
+  <object class="LabelWgt" id="label1" static="true">
+   <wgtStyle width="63.00" x="49.57" y="65.00" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" cx="33.74" cy="11.80" height="14.00" alignment="left" vert-align="top" text="User name:" keypad-type="None" font-size="8"/>
+  </object>
+  <object class="LabelWgt" id="label2" static="true">
+   <wgtStyle width="59.00" x="50.00" y="107.00" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" cx="33.74" cy="10.62" height="14.00" alignment="left" vert-align="top" text="Password:" keypad-type="None" font-size="8"/>
+  </object>
+  <object class="GroupWgt" id="GroupWgt5">
+   <wgtStyle width="55.00" x="219.21" y="137.98" cx="25.88" cy="10.45" height="22.00"/>
+   <object class="ImageWgt" id="image8" static="true">
+    <wgtStyle width="55.00" imagePath="images/frm_ro2_chrm1.svg" enableCache="false" x="0.00" y="0.00" cx="24.80" cy="9.90" height="22.00"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="btnStd3">
+    <wgtStyle width="50.69" x="2.16" y="2.20" fill="rgb(255,255,255)" dx="1" cx="24.80" form="standard" dy="-1" cy="8.25" height="18.15" releasePath="images/BU_ro2_gl1_xxx_1.svg" needlePath="images/BU_ro2_gl1_xxx_2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="LogInAction" attribute="onMouseRelease" actionName="LogIn" event="onMouseUp" actionID="0" actionWgt="_UserMgr" LoginEditID="LogInEditWgt1"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="label3">
+    <wgtStyle width="38.90" x="9.00" forcePaint="1" y="3.00" font-family="Arial" fill="rgb(40,40,40)" cx="33.84" cy="11.23" height="15.72" alignment="center" vert-align="middle" text="Sign In" keypad-type="None" font-size="8"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="error_msg">
+   <wgtStyle width="219.99" x="51.45" forcePaint="16" y="169.77" font-family="Arial" fill="rgb(255,0,0)" wrapping="true" cx="109.22" cy="26.53" wgtStaticOpt="dynamic" height="54.54" alignment="left" vert-align="top" text="" keypad-type="None" font-size="12"/>
+  </object>
+  <object class="LogInEditWgt" id="LogInEditWgt1">
+   <wgtStyle width="150.51" x="123.98" y="57.13" height="73.87"/>
+   <object class="EditBoxWgt" id="password_edit">
+    <wgtStyle width="150.00" x="0.00" forcePaint="8" y="43.87" font-family="Arial" fill="rgb(40,40,40)" cx="20.30" cy="16.48" height="30.00" alignment="left" vert-align="middle" editType="2" text="" keypad-type="Alphabet" font-size="14"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" attribute="text" tag="password" sourceType="Widget" dataSource="LogInEditWgt1"/>
+    </dataLinks>
+   </object>
+   <object class="EditBoxWgt" id="username_edit">
+    <wgtStyle width="150.00" x="0.51" forcePaint="8" y="0.00" font-family="Arial" fill="rgb(40,40,40)" cx="20.30" cy="16.48" height="30.00" alignment="left" vert-align="middle" editType="-842150451" text="" keypad-type="Alphabet" font-size="14"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" attribute="text" tag="username" sourceType="Widget" dataSource="LogInEditWgt1"/>
+    </dataLinks>
+   </object>
+  </object>
+ </object>
+</wgtPage>
