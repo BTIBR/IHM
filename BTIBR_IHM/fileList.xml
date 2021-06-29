@@ -1,13 +1,7 @@
 <JMFiles>
- <ProjectInfo Size="1174964" AllowedSize="31457280"/>
+ <ProjectInfo Size="1166553" AllowedSize="31457280"/>
  <files>
-  <file size="4496" md5="c5f31110e883c1f955dbbddf5f2db94c" name="Page1.jmx"/>
-  <file size="1475" md5="374abadb35c96cbf0c57d3de68950fb7" name="images/btn_plastic_rect_1.svg"/>
-  <file size="2026" md5="218f5114a2ae5f827357741fb7a0b3b0" name="images/btn_plastic_rect_2.svg"/>
-  <file size="2132" md5="e8411219e1cfffa6fd24ea6a70ac6578" name="images/btn_shiney_rect_1.svg"/>
-  <file size="2569" md5="40a2d81d6c938306f7fb5197fe23ce8c" name="images/btn_shiney_rect_2.svg"/>
-  <file size="4447" md5="d061aca03f49085f2782aa6472691fc7" name="images\frame_rect_chrome.svg"/>
-  <file size="1832" md5="e752999381f8ddea1a7221f80867552f" name="opt/Page1.png"/>
+  <file size="1906" md5="2d40f90858f0facf91302735145fa76e" name="Page1.jmx"/>
   <file size="6550" md5="1f020a5588657dd55ff2c854aac59e71" name="BTIBR_IHM.jpr"/>
   <file size="28793" md5="d46b62688f198e37f3427fa470698428" name="Keypads\Alphabet.jmx"/>
   <file size="1790" md5="b142ce8345c1ecf4788decb22f2bf9d4" name="Keypads\images\ic_cn2_03.svg"/>
@@ -43,14 +37,14 @@
   <file size="4070" md5="05fd7ac40c9cbbd22572fa027e5a192a" name="UserMgmtTemplates\images\SwitchUserLoginPage.png"/>
   <file size="13459" md5="4a8f522d0a926005a310a61bb2b601bb" name="UserMgmtTemplates\UserEditor.jmx"/>
   <file size="5243" md5="4fc1d5b12e901761780f4b93fee34697" name="UserMgmtTemplates\images\UserEditor.png"/>
-  <file size="11" md5="5e2931626547a86b3abf37e17aeb5050" name="config\groups.xml"/>
-  <file size="49" md5="abda3f189a381dd03226822829d7fdf8" name="config\tags.xml"/>
+  <file size="170" md5="5fbb25be0377ef4b981317cf7dcf67ec" name="config\groups.xml"/>
+  <file size="862" md5="bbde6d20f9018cfad7ce891285525cd1" name="config\tags.xml"/>
   <file size="11" md5="df9c5d764ce6d6e95cdb825c5af54c65" name="config\trends.xml"/>
   <file size="39" md5="f3193b416cfa798630bed0169f8c6bf1" name="config\Recipe.xml"/>
   <file size="712" md5="176d097331b0d8ebbb1b50ca8c4f4122" name="config\Alarms.xml"/>
   <file size="157" md5="5b1aa5a6b171bae54dc2c947239172e4" name="config\MultiLang.xml"/>
   <file size="217" md5="6171122ce28b82822c3b924a82cc8594" name="config\Scheduler.xml"/>
-  <file size="14" md5="b7e1da38f6848b466de48d4994fcef5f" name="config\Protocols.xml"/>
+  <file size="623" md5="a9b8ba1ccf79c8bc68fa5f014994fc13" name="config\Protocols.xml"/>
   <file size="1336" md5="f0f3b62dda0086caf6a1b5bb70675430" name="config\EventConfig.xml"/>
   <file size="11" md5="f5863d43e6276e44d239f5277761d2ca" name="config\EventListInfo.xml"/>
   <file size="749" md5="0d43f7097ba141150da3ca65921d2a2a" name="config\Reports.xml"/>
@@ -63,7 +57,7 @@
   <file size="16" md5="8d0263d50231ea6da87aa07fead098fb" name="config\AuditTrail.xml"/>
   <file size="44" md5="f762c3dd92f9ab00a487640ba65bbe64" name="config\datatransfers.xml"/>
   <file size="229" md5="393498678e4be0b6c957df0f7c17610c" name="config\ScreenSaver.xml"/>
-  <file size="3067" md5="15457baf41a0ce4fbbe7050721211666" name="opt\imageCacheList.xml"/>
+  <file size="2497" md5="c60b0778cc6382e9eb4c21c689827ffa" name="opt\imageCacheList.xml"/>
   <file size="939280" md5="013ec165105a40eb43bc1130d530bd1f" name="tahoma.ttf"/>
   <file size="65" md5="ee8ace5264214e5edb63b09aad59fcf1" name="fonts.xml"/>
  </files>

@@ -1,2 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tags/>
+<tags>
+    <tag>
+        <name>INPUT_IHM</name>
+        <resourceLocator>prot1://1?MW0?0?0?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?short</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>OUTPUT_CLP</name>
+        <resourceLocator>prot1://1?MW0?1?0?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://OUTPUT_CLP?short</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+</tags>

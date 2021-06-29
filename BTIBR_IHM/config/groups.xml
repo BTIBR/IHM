@@ -1,1 +1,8 @@
-<groups/>
+<groups>
+ <group Type="Auto">
+  <name>Page1@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>INPUT_IHM</tag>
+  <tag>OUTPUT_CLP</tag>
+ </group>
+</groups>

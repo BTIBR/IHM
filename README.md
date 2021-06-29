@@ -7,3 +7,6 @@ Projeto de software da IHM que controla a Bancada de Teste de Pré-Carga de Fuso
 
 ### Software
 - ABB Panel Builder v1.90.0+
+
+### IP
+192.168.0.56

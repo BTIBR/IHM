@@ -1,5 +1,19 @@
 <protocols>
  <protocol>
+  <id>prot1</id>
+  <name>ABBS</name>
+  <file>ABBS</file>
+  <configuration>CfgVer=1 prefix=PLC_1 defNodeId=1 timeout=1000. delay=0 repeat=2 txMode=RTU uart=com1 baudrate=9600 parity=Even bits=8 stopbits=1 mode=RS-485 model=2 </configuration>
+  <enableOptimization>true</enableOptimization>
+  <enableDatagram>false</enableDatagram>
+  <offline_ort>90000</offline_ort>
+  <offline_opt>false</offline_opt>
+  <offline_rpt>3</offline_rpt>
+  <dictionaryname></dictionaryname>
+  <enableSimProtocol>true</enableSimProtocol>
+  <displayName>ABB Modbus RTU</displayName>
+ </protocol>
+ <protocol>
   <id>prot5</id>
   <name>VRBL</name>
   <file></file>
