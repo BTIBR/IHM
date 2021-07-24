@@ -1,9 +1,9 @@
 <protocols>
  <protocol>
   <id>prot1</id>
-  <name>ABBS</name>
-  <file>ABBS</file>
-  <configuration>CfgVer=1 prefix=PLC_1 defNodeId=1 timeout=1000. delay=0 repeat=2 txMode=RTU uart=com1 baudrate=9600 parity=Even bits=8 stopbits=1 mode=RS-485 model=2 </configuration>
+  <name>MODT</name>
+  <file>MODT</file>
+  <configuration>CfgVer=1 prefix=NEON ipAddress=192.168.0.200 port=502 timeout=2000 modbusUnitID=1 maxOptLen=250 maxBitOptLen=2000 presetFunction=16 forceFunction=15 model=1 </configuration>
   <enableOptimization>true</enableOptimization>
   <enableDatagram>false</enableDatagram>
   <offline_ort>90000</offline_ort>
@@ -11,6 +11,6 @@
   <offline_rpt>3</offline_rpt>
   <dictionaryname></dictionaryname>
   <enableSimProtocol>true</enableSimProtocol>
-  <displayName>ABB Modbus RTU</displayName>
+  <displayName>Modbus TCP</displayName>
  </protocol>
 </protocols>

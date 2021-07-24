@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="93.971px" viewBox="0 0 93.98 93.971" width="93.98px" version="1.1" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 93.98 93.971">
+<circle id="bgColor00" cy="46.985" cx="46.995" r="46.983" fill="#F46C0F"/>
+<radialGradient id="circle2860_1_" gradientUnits="userSpaceOnUse" cy="795.95" cx="194.82" gradientTransform="translate(-153.49 -758.3)" r="63.115">
+	<stop stop-opacity="0" offset=".7122"/>
+	<stop stop-opacity=".75" offset="1"/>
+</radialGradient>
+<circle cy="46.985" cx="46.984" r="46.983" fill="url(#circle2860_1_)"/>
+<radialGradient id="circle2867_2_" gradientUnits="userSpaceOnUse" cy="812.93" cx="206.08" gradientTransform="matrix(1 0 0 1.0111 -153.49 -767.31)" r="56.069">
+	<stop stop-color="#fff" stop-opacity="0" offset=".7527"/>
+	<stop stop-color="#fff" offset="1"/>
+</radialGradient>
+<circle opacity=".75" r="46.982" cy="46.985" cx="46.984" enable-background="new    " fill="url(#circle2867_2_)"/>
+<radialGradient id="circle2867_3_" gradientUnits="userSpaceOnUse" cy="807.95" cx="198.16" gradientTransform="matrix(1 0 0 1.0111 -153.49 -767.26)" r="58.406">
+	<stop stop-color="#fff" stop-opacity="0" offset=".7527"/>
+	<stop stop-color="#fff" offset="1"/>
+</radialGradient>
+<circle opacity=".28" r="46.982" cy="46.985" cx="46.984" enable-background="new    " fill="url(#circle2867_3_)"/>
+</svg>

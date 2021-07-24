@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project">
- <object pageSize="640,480" enableUserMgmt="true" targetName="CP630" UserMgmtTmplType="UserMgmtTemplates_small" id="BTIBR_IHM" IncludeVNC="false" displayMode="0" qtft="true" IncludePDFReader="false" targetType="Windows CE .NET/un31" screenSaverPage="0" dataWndSize="0,70" debugIP="127.0.0.1" defaultPageSize="320,240" downloadPrepDone="true" ServerSynchEnable="disable" staticOptEnable="true" screenSaverTimeout="0" maxOpenDlgs="5" pageName="BTIBR_IHM" startPage="Page1.jmx" ContextMenu="0" pageType="project" screenSaverDisplayTime="0" KeyPadTmplType="KeyPadTemplates_small" autoRepeatPeriod="250" class="ProjectWgt" holdTime="2000">
+ <object pageSize="640,480" enableUserMgmt="true" targetName="CP630" UserMgmtTmplType="UserMgmtTemplates_small" id="BTIBR_IHM" IncludeVNC="false" displayMode="0" qtft="true" IncludePDFReader="false" targetType="Windows CE .NET/un31" screenSaverPage="0" dataWndSize="0,70" debugIP="127.0.0.1" defaultPageSize="320,240" downloadPrepDone="true" ServerSynchEnable="disable" staticOptEnable="true" screenSaverTimeout="0" maxOpenDlgs="5" pageName="BTIBR_IHM" startPage="Main.jmx" ContextMenu="0" pageType="project" screenSaverDisplayTime="0" KeyPadTmplType="KeyPadTemplates_small" autoRepeatPeriod="250" class="ProjectWgt" holdTime="2000">
   <wgtStyle width="640" x="0" y="0" height="480" ver="019000975" v="01.90.00.975"/>
   <object class="MultiLangMgrWgt" id="_MultiLangMgr" fileName="MultiLang.xml">
    <wgtStyle width="0" x="0" y="0" height="0"/>
@@ -7,7 +7,9 @@
   <object class="PageMgrWgt" id="_PageMgr">
    <wgtStyle width="0" x="0" y="0" height="0"/>
    <pages>
-    <page class="PageWgt" size="320,240" exportType="255" type="normal" precache="false" name="Page1" file="Page1.jmx"/>
+    <page class="PageWgt" size="320,240" exportType="255" type="normal" precache="false" name="Main" file="Main.jmx"/>
+    <page class="PageWgt" size="320,240" exportType="255" type="normal" precache="false" name="Config_Leticya" file="Config_Leticya.jmx"/>
+    <page class="PageWgt" size="320,240" exportType="255" type="normal" precache="false" name="Config_Teste" file="Config_Teste.jmx"/>
    </pages>
   </object>
   <object class="PageMLTextMgrWgt" id="_ProjectMLTextMgr" mgrType="Project" mlFileName="">

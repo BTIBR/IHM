@@ -1,8 +1,12 @@
 <groups>
  <group Type="Auto">
-  <name>Page1@$GroupSubscrWgt@$0</name>
+  <name>Config_Leticya@$GroupSubscrWgt@$0</name>
   <active>false</active>
-  <tag>INPUT_IHM</tag>
-  <tag>OUTPUT_CLP</tag>
+  <tag>lbl_Rx</tag>
+  <tag>lbl_Ry</tag>
+  <tag>lbl_Rz</tag>
+  <tag>lbl_X</tag>
+  <tag>lbl_Y</tag>
+  <tag>lbl_Z</tag>
  </group>
 </groups>

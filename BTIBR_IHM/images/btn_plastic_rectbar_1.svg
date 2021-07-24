@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="478.07001"
+   height="119.471"
+   viewBox="0 0 478.07 119.471"
+   id="Layer_1"
+   xml:space="preserve"><defs
+   id="defs2870" />
+<path
+   d="M 478.07,119.471 H 0 V 0 h 478.07 v 119.471 z"
+   id="bgColor00"
+   style="fill:#f46c0f" />
+<linearGradient
+   x1="478.07031"
+   y1="59.7356"
+   x2="-0.92970002"
+   y2="59.7356"
+   id="bgColor00_3_"
+   gradientUnits="userSpaceOnUse">
+	<stop
+   id="stop2849"
+   style="stop-color:#000000;stop-opacity:0.64999998"
+   offset="0" />
+	<stop
+   id="stop2851"
+   style="stop-color:#000000;stop-opacity:0"
+   offset="0.0424" />
+	<stop
+   id="stop2853"
+   style="stop-color:#ffffff;stop-opacity:0"
+   offset="0.9576" />
+	<stop
+   id="stop2855"
+   style="stop-color:#ffffff;stop-opacity:1"
+   offset="1" />
+</linearGradient>
+<path
+   d="M 478.07,119.471 H 0 V 1.1239322e-8 H 478.07 V 119.471 z"
+   id="bgColor00_1_"
+   style="opacity:0.5;fill:url(#bgColor00_3_)" />
+<linearGradient
+   x1="239.0356"
+   y1="120.2356"
+   x2="239.0356"
+   y2="-0.76849997"
+   id="bgColor00_4_"
+   gradientUnits="userSpaceOnUse">
+	<stop
+   id="stop2859"
+   style="stop-color:#000000;stop-opacity:0.64999998"
+   offset="0" />
+	<stop
+   id="stop2861"
+   style="stop-color:#000000;stop-opacity:0"
+   offset="0.1939" />
+	<stop
+   id="stop2863"
+   style="stop-color:#ffffff;stop-opacity:0"
+   offset="0.82419997" />
+	<stop
+   id="stop2865"
+   style="stop-color:#ffffff;stop-opacity:1"
+   offset="1" />
+</linearGradient>
+<path
+   d="M 478.07,119.471 H 0 V 1.1239322e-8 H 478.07 V 119.471 z"
+   id="bgColor00_2_"
+   style="opacity:0.5;fill:url(#bgColor00_4_)" />
+</svg>

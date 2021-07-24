@@ -1,0 +1,159 @@
+<wgtPage projectType="HMI Project">
+ <object pageName="Main" pageSize="320,240" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" staticFile="opt/Main.png" id="Main" staticOptEnable="true">
+  <wgtStyle width="320" x="0" y="0" height="240" ver="019000975" color="rgb(255,170,0)" v="01.90.00.975"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" id="21"/>
+    <MLText L1="Leticya" id="0"/>
+    <MLText L1="Start Teste" id="1"/>
+    <MLText L1="Teste" id="3"/>
+    <MLText L1="Scatter Diagram" id="22"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="BtnStd1" customType="Button">
+   <wgtStyle width="102" x="208" y="207" cx="51" cy="17" height="34"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="102" enableCache="false" x="0" y="0" visibility="false" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="81.89" cy="29.70" bdrSize="0.17,0.14,0.16,0.16" height="34" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd1">
+    <wgtStyle width="74.54" x="13.73" y="4.58" bdrImageSize="38.00,37.00" fill="rgb(40,40,40)" cx="62.46" form="standard" cy="22.31" bdrSize="0.11,0.11,0.08,0.09" height="24.85" releasePath="images/btn_shiney_rect_1.svg" needlePath="images/btn_shiney_rect_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_StartTeste"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_StartTeste"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label9">
+    <wgtStyle width="62.77" font-color="rgb(255,255,255)" x="17.65" forcePaint="1" font-sizepx="12" y="6.54" font-family="Tahoma" wrapping="true" cx="60.79" cy="19.18" height="20.27" alignment="center" vert-align="middle" text="Start Teste" keypad-type="None" font-size="9"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image18" static="true">
+    <wgtStyle width="39.23" enableCache="false" x="29.42" y="11.12" cx="26.21" cy="6.85" height="11.12"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd5" customType="Button">
+   <wgtStyle width="41" x="57" y="204" cx="20.50" cy="19.50" height="39"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image7" static="true">
+    <wgtStyle width="41" imagePath="images\frame_rrect_chrome.svg" enableCache="false" x="0" y="0" visibility="false" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="32.92" cy="34.06" bdrSize="0.24,0.24,0.21,0.19" height="39" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd5">
+    <wgtStyle width="30.21" x="5.52" y="5.25" bdrImageSize="38.00,37.00" fill="rgb(255,255,255)" cx="25.31" form="standard" cy="25.59" bdrSize="0.17,0.15,0.15,0.14" height="28.50" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="Config_Leticya.jmx" class="LoadPageAction" attribute="onMouseClick" actionName="LoadPage" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label4" static="true">
+    <wgtStyle width="25.23" font-color="rgb(40,40,40)" x="7.10" font-sizepx="13" y="7.50" font-family="Tahoma" wrapping="true" cx="24.43" cy="22.01" height="23.25" alignment="right" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="21">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image8">
+    <wgtStyle width="15.77" imagePath="images\ic_au1_054.svg" enableCache="false" x="11.83" forcePaint="1" y="12.75" cx="10.53" cy="7.86" height="12.75"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="ScatterDiagram1" customType="ScatterDiagram">
+   <wgtStyle width="323" x="-2" forcePaint="33" y="-1" cx="161.50" cy="107" height="214" staticFile="opt/MainScatterDiagram1.png"/>
+   <links>
+    <attr attrName="xlabels" alias="GridWgt.gridX;LabelsWgt2.labelFreq;TicksWgt2.labelFreq"/>
+    <attr attrName="ylabels" alias="GridWgt.gridY;LabelsWgt1.labelFreq;TicksWgt1.labelFreq"/>
+    <attr attrName="xmin" alias="XYCurveWgt1.minx;XYCurveWgt2.minx;XYCurveWgt3.minx;XYCurveWgt4.minx;XYCurveWgt5.minx;LabelsWgt2.min"/>
+    <attr attrName="xmax" alias="XYCurveWgt1.maxx;XYCurveWgt2.maxx;XYCurveWgt3.maxx;XYCurveWgt4.maxx;XYCurveWgt5.maxx;LabelsWgt2.max"/>
+    <attr attrName="ymin" alias="XYCurveWgt1.miny;XYCurveWgt2.miny;XYCurveWgt3.miny;XYCurveWgt4.miny;XYCurveWgt5.miny;LabelsWgt1.min"/>
+    <attr attrName="ymax" alias="XYCurveWgt1.maxy;XYCurveWgt2.maxy;XYCurveWgt3.maxy;XYCurveWgt4.maxy;XYCurveWgt5.maxy;LabelsWgt1.max"/>
+   </links>
+   <object class="LabelWgt" id="label3" static="true">
+    <wgtStyle width="256.29" x="52.81" font-sizepx="16" y="0" font-family="Tahoma" font-bold="true" cx="126.32" cy="9.33" height="19.70" alignment="center" vert-align="top" text="Scatter Diagram" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="22">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="TicksWgt" id="YTicks1" static="true">
+    <wgtStyle width="23.08" reverseScale="true" x="31.58" y="22.25" cx="19.44" form="vertical" labelFreq="5" cy="76.50" height="153.96" tickSize2="15" tickFreq="4" startAngle="-10" tickSize="7" stroke-linecap="butt" max="100" stroke-width="2" endAngle="200"/>
+   </object>
+   <object class="TicksWgt" id="XTicks1" static="true">
+    <wgtStyle cx="128.22" startAngle="-20" cy="9.56" endAngle="185" reverseScale="true" tickSize2="15" x="52.22" y="174.17" max="100" align="1" stroke-width="2" width="258.70" stroke-linecap="butt" tickSize="7" tickFreq="4" height="19.13" labelFreq="5" form="horizontal"/>
+   </object>
+   <object class="LabelsWgt" id="labels1" static="true">
+    <wgtStyle font-family="Tahoma" font-sizepx="13" cx="13.10" startAngle="-20" cy="82.67" timeSpec="local" reverseScale="true" dataFormat="#" endAngle="185" x="0" useTextAlign="true" y="16.04" rotated="true" vert-align="top" max="100" align="1" width="27.47" labelNames="" tickFreq="5" height="166.27" labelFreq="5" form="vertical" font-size="10"/>
+   </object>
+   <object class="LabelsWgt" id="labels2" static="true">
+    <wgtStyle font-family="Tahoma" font-sizepx="13" cx="141.26" startAngle="-20" cy="10.28" timeSpec="local" dataFormat="#" endAngle="185" x="39.32" y="193.44" rotated="true" vert-align="top" max="100" width="283.68" labelNames="" tickFreq="5" height="20.56" labelFreq="5" form="horizontal" font-size="10"/>
+   </object>
+   <object class="TrendWindowWgt" id="TrendWindow1">
+    <wgtStyle width="257.50" x="53.45" stopTime="621113328401294184" y="23.09" numCurves="1" fill="rgb(127,127,127)" cx="128.73" cy="76.50" height="153.01" frame="300" stroke="rgb(40,40,40)" pageDuration="0" updateInterval="1000" trendType="2"/>
+   </object>
+   <object class="ImageWgt" id="BgImage1" static="true">
+    <wgtStyle width="255.87" imagePath="images\glass.svg" enableCache="false" x="54.03" y="23.39" cx="127.93" cy="40.14" height="80.26"/>
+   </object>
+   <object class="GridWgt" id="Grid1" static="true">
+    <wgtStyle width="259.14" x="52.28" y="22.67" cx="129.57" cy="76.73" grid="5" colorX="rgb(40,40,40)" height="153.46" colorY="rgb(40,40,40)" max="40" gridY="5"/>
+   </object>
+   <object class="XYCurveWgt" id="XYCurveWgt1">
+    <wgtStyle forcePaint="8" cx="128.79" cy="76.69" x="54.06" y="21.99" yvalue="grf_PreCarga" xvalue="grf_Distancia" stroke-width="2" width="256.38" y1="100" drawType="0" maxlimit="1000" maxx="100" height="153.39" type="line" minx="0" stroke="rgb(0,0,255)" maxy="100" samplinginterval="1000" frame="300" miny="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="ReadSource" widgetType="Project" sourceType="Data" dataSource="_IdalItems"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle width="60" font-color="rgb(23,30,40)" x="10" forcePaint="1" font-sizepx="13" y="215" font-family="Tahoma" wrapping="true" cx="30" cy="8.05" height="17" alignment="center" vert-align="top" marker="true" text="Leticya" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="0">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnStd4" customType="Button">
+   <wgtStyle width="41" x="154" forcePaint="1" y="204" cx="20.50" cy="19.50" height="39"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image5" static="true">
+    <wgtStyle width="41" imagePath="images\frame_rrect_chrome.svg" enableCache="false" x="0" y="0" visibility="false" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="32.92" cy="34.06" bdrSize="0.24,0.24,0.21,0.19" height="39" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd4">
+    <wgtStyle width="30.21" x="5.52" forcePaint="1" y="5.25" bdrImageSize="38.00,37.00" fill="rgb(255,255,255)" cx="25.31" form="standard" cy="25.59" bdrSize="0.17,0.15,0.15,0.14" height="28.50" releasePath="images/btn_shiney_rrect_1.svg" needlePath="images/btn_shiney_rrect_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="Config_Teste.jmx" class="LoadPageAction" attribute="onMouseClick" actionName="LoadPage" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label6" static="true">
+    <wgtStyle width="25.23" font-color="rgb(40,40,40)" x="7.10" font-sizepx="13" y="7.50" font-family="Tahoma" wrapping="true" cx="24.43" cy="22.01" height="23.25" alignment="right" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="21">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image6">
+    <wgtStyle width="15.77" imagePath="images\ic_au1_054.svg" enableCache="false" x="11.83" forcePaint="1" y="12.75" cx="10.53" cy="7.86" height="12.75"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label7">
+   <wgtStyle width="60" font-color="rgb(23,30,40)" x="108" forcePaint="1" font-sizepx="13" y="215" font-family="Tahoma" wrapping="true" cx="30" cy="8.05" height="17" alignment="center" vert-align="top" marker="true" text="Teste" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="3">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+</wgtPage>

@@ -1,22 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tags>
     <tag>
-        <name>INPUT_IHM</name>
-        <resourceLocator>prot1://1?MW0?0?0?short</resourceLocator>
+        <name>grf_PreCarga</name>
+        <resourceLocator>prot1://0?HREG?400001?double</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://Tag1?short</simulator>
+        <simulator>VRBL://Tag1?double</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>OUTPUT_CLP</name>
-        <resourceLocator>prot1://1?MW0?1?0?short</resourceLocator>
+        <name>grf_Distancia</name>
+        <resourceLocator>prot1://0?HREG?400003?double</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://OUTPUT_CLP?short</simulator>
+        <simulator>VRBL://grf_Distancia?double</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_StartTeste</name>
+        <resourceLocator>prot1://0?HREG?400005.0?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_StartTeste?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>lbl_X</name>
+        <resourceLocator>prot1://0?HREG?400006?double</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://lbl_X?double</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>lbl_Y</name>
+        <resourceLocator>prot1://0?HREG?400008?double</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://lbl_Y?double</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>lbl_Z</name>
+        <resourceLocator>prot1://0?HREG?400010?double</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://lbl_Z?double</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>lbl_Rx</name>
+        <resourceLocator>prot1://0?HREG?400012?double</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://lbl_Rx?double</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>lbl_Ry</name>
+        <resourceLocator>prot1://0?HREG?400014?double</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://lbl_Ry?double</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>lbl_Rz</name>
+        <resourceLocator>prot1://0?HREG?400016?double</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://lbl_Rz?double</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_X+</name>
+        <resourceLocator>prot1://0?HREG?400018.0?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_X+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_X-</name>
+        <resourceLocator>prot1://0?HREG?400018.1?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_X-?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_Y+</name>
+        <resourceLocator>prot1://0?HREG?400018.2?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_Y+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_Y-</name>
+        <resourceLocator>prot1://0?HREG?400018.3?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_Y-?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_Z+</name>
+        <resourceLocator>prot1://0?HREG?400018.4?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_Z+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_Z-</name>
+        <resourceLocator>prot1://0?HREG?400018.5?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_Z-?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_Rx+</name>
+        <resourceLocator>prot1://0?HREG?400018.6?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_Rx+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_Rx-</name>
+        <resourceLocator>prot1://0?HREG?400018.7?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_Rx-?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_Ry+</name>
+        <resourceLocator>prot1://0?HREG?400018.8?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_Ry+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_Ry-</name>
+        <resourceLocator>prot1://0?HREG?400018.9?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_Ry-?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_Rz+</name>
+        <resourceLocator>prot1://0?HREG?400018.10?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_Rz+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_Rz-</name>
+        <resourceLocator>prot1://0?HREG?400018.11?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_Rz-?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_EnableModoManual</name>
+        <resourceLocator>prot1://0?HREG?400018.12?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_EnableModoManual?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_EnableModoJoint</name>
+        <resourceLocator>prot1://0?HREG?400018.13?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_EnableModoJoint?boolean</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
