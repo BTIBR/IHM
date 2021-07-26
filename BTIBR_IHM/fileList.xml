@@ -1,9 +1,10 @@
 <JMFiles>
- <ProjectInfo Size="2149180" AllowedSize="31457280"/>
+ <ProjectInfo Size="2176280" AllowedSize="31457280"/>
  <files>
-  <file size="32099" md5="f03d51ef1a38f8968675f33924d2eb48" name="Config_Leticya.jmx"/>
-  <file size="5780" md5="e390355f533625afcdb08153e392f34d" name="Config_Teste.jmx"/>
-  <file size="11865" md5="8f2fb78e94e02afb6381fa7a458367f6" name="Main.jmx"/>
+  <file size="39210" md5="c614fe2d881efca82d7045d1f3b7cb5d" name="Config_Leticya.jmx"/>
+  <file size="66" md5="8c8bfbd55c7a8994b71b5f87a31bd69b" name="Config_Leticya.js"/>
+  <file size="6376" md5="40838213644b45b48f176c558acff881" name="Config_Teste.jmx"/>
+  <file size="12133" md5="4d313b46d735690a4b540d78f4782388" name="Main.jmx"/>
   <file size="1871" md5="5496fe8bbacf605d66742afca981f752" name="images/btn_plastic_rectbar_1.svg"/>
   <file size="1969" md5="8a503ca6685dc2b8044bfedca3e749d7" name="images/btn_plastic_rectbar_2.svg"/>
   <file size="1569" md5="37a21e87804a6929bce8c83ef17fd15f" name="images/btn_plastic_round_1.svg"/>
@@ -23,9 +24,9 @@
   <file size="1026" md5="ea25f954e82701297d5759ddb254b609" name="images\ic_au1_054.svg"/>
   <file size="535" md5="e0bae58d3b99fd188813d0a4da087e5e" name="images\ic_ma1_012.svg"/>
   <file size="12003" md5="de6580ec55784f0aa59d45606321be11" name="opt/Config_Leticya.png"/>
-  <file size="5833" md5="524a612329d255794a5c0cf0319c5ccf" name="opt/Config_Teste.png"/>
+  <file size="5832" md5="bc4746991fa32c007852a3966675e92d" name="opt/Config_Teste.png"/>
   <file size="814" md5="d9f5ce081b115e19ae3b6cfcc4123e5a" name="opt/Main.png"/>
-  <file size="5182" md5="e003499318697733d139d5d48c74f200" name="opt/MainScatterDiagram1.png"/>
+  <file size="5147" md5="6dbc5d7eeafcb74b3cb8280eb26fea07" name="opt/MainScatterDiagram1.png"/>
   <file size="6823" md5="48df2a6be08c760f5195876400333951" name="BTIBR_IHM.jpr"/>
   <file size="28793" md5="d46b62688f198e37f3427fa470698428" name="Keypads\Alphabet.jmx"/>
   <file size="1790" md5="b142ce8345c1ecf4788decb22f2bf9d4" name="Keypads\images\ic_cn2_03.svg"/>
@@ -61,8 +62,8 @@
   <file size="4070" md5="05fd7ac40c9cbbd22572fa027e5a192a" name="UserMgmtTemplates\images\SwitchUserLoginPage.png"/>
   <file size="13459" md5="4a8f522d0a926005a310a61bb2b601bb" name="UserMgmtTemplates\UserEditor.jmx"/>
   <file size="5243" md5="4fc1d5b12e901761780f4b93fee34697" name="UserMgmtTemplates\images\UserEditor.png"/>
-  <file size="11" md5="5e2931626547a86b3abf37e17aeb5050" name="config\groups.xml"/>
-  <file size="49" md5="abda3f189a381dd03226822829d7fdf8" name="config\tags.xml"/>
+  <file size="487" md5="ec8dec7b64ef4bab7934e534e1105668" name="config\groups.xml"/>
+  <file size="10347" md5="9b64fc8fe5febf9c8823d7a1b22e1eed" name="config\tags.xml"/>
   <file size="11" md5="df9c5d764ce6d6e95cdb825c5af54c65" name="config\trends.xml"/>
   <file size="39" md5="f3193b416cfa798630bed0169f8c6bf1" name="config\Recipe.xml"/>
   <file size="712" md5="176d097331b0d8ebbb1b50ca8c4f4122" name="config\Alarms.xml"/>
@@ -81,7 +82,7 @@
   <file size="16" md5="8d0263d50231ea6da87aa07fead098fb" name="config\AuditTrail.xml"/>
   <file size="44" md5="f762c3dd92f9ab00a487640ba65bbe64" name="config\datatransfers.xml"/>
   <file size="229" md5="393498678e4be0b6c957df0f7c17610c" name="config\ScreenSaver.xml"/>
-  <file size="3795" md5="c88d9aab2f656fb471c6451a00211c63" name="opt\imageCacheList.xml"/>
+  <file size="4210" md5="400b928ec3e22c4e10637c244ad0ffcd" name="opt\imageCacheList.xml"/>
   <file size="867988" md5="ae4aef91c1d0a14fb7da1f924d04c4e9" name="tahomabd.ttf"/>
   <file size="939280" md5="013ec165105a40eb43bc1130d530bd1f" name="tahoma.ttf"/>
   <file size="113" md5="ee4de40ddbb1929c1716830a1027f65c" name="fonts.xml"/>

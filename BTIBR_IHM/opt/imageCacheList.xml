@@ -8,11 +8,14 @@
  <file fill="rgb(0,0,0)" imgSize="17,14" stroke="none" numUses="6" isSvgFile="true" file="images/ic_ma1_011_rev1.svg" numSizes="1"/>
  <file fill="rgb(246,246,246)" imgSize="41,40" stroke="none" numUses="5" isSvgFile="true" file="images/btn_kbdwht_wide_2_rev1.svg" numSizes="5" prePath="Keypads"/>
  <file fill="rgb(246,246,246)" imgSize="41,40" stroke="none" numUses="5" isSvgFile="true" file="images/btn_kbdwht_wide_1_rev1.svg" numSizes="5" prePath="Keypads"/>
+ <file fill="rgb(40,40,40)" imgSize="75,25" stroke="none" numUses="3" isSvgFile="true" file="images/btn_shiney_rect_2.svg" numSizes="3"/>
+ <file fill="rgb(40,40,40)" imgSize="75,25" stroke="none" numUses="3" isSvgFile="true" file="images/btn_shiney_rect_1.svg" numSizes="3"/>
  <file fill="rgb(23,30,40)" imgSize="55,40" stroke="none" numUses="2" isSvgFile="true" file="images/shift.svg" numSizes="1" prePath="Keypads"/>
+ <file fill="rgb(255,255,255)" imgSize="30,29" stroke="none" numUses="2" isSvgFile="true" file="images/btn_shiney_rrect_2.svg" numSizes="1"/>
+ <file fill="rgb(255,255,255)" imgSize="30,29" stroke="none" numUses="2" isSvgFile="true" file="images/btn_shiney_rrect_1.svg" numSizes="1"/>
+ <file fill="rgb(0,0,0)" imgSize="16,13" stroke="none" numUses="2" isSvgFile="true" file="images/ic_au1_054.svg" numSizes="1"/>
  <file fill="rgb(120,120,120)" imgSize="30,30" stroke="none" numUses="2" isSvgFile="true" file="images/btn_plastic_round_2.svg" numSizes="1"/>
  <file fill="rgb(120,120,120)" imgSize="30,30" stroke="none" numUses="2" isSvgFile="true" file="images/btn_plastic_round_1.svg" numSizes="1"/>
- <file fill="rgb(40,40,40)" imgSize="49,25" stroke="none" numUses="2" isSvgFile="true" file="images/btn_shiney_rect_2.svg" numSizes="1"/>
- <file fill="rgb(40,40,40)" imgSize="49,25" stroke="none" numUses="2" isSvgFile="true" file="images/btn_shiney_rect_1.svg" numSizes="1"/>
  <file fill="rgb(23,30,40)" imgSize="21,31" stroke="none" numUses="2" isSvgFile="true" file="images/ic_cn2_03.svg" numSizes="2" prePath="Keypads"/>
  <file fill="rgb(23,30,40)" imgSize="22,40" stroke="none" numUses="2" isSvgFile="true" file="images/ic_pl2_114.svg" numSizes="2" prePath="Keypads"/>
  <file fill="rgb(23,30,40)" imgSize="22,40" stroke="none" numUses="2" isSvgFile="true" file="images/ic_pl2_115.svg" numSizes="2" prePath="Keypads"/>

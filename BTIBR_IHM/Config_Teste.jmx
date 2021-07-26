@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project">
- <object pageName="Config_Teste" pageSize="320,240" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" staticFile="opt/Config_Teste.png" id="Config_Teste" staticOptEnable="true">
+ <object pageName="Config_Teste" pageSize="320,240" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" staticFile="opt/Config_Teste.png" id="Config_Teste" staticOptEnable="true">
   <wgtStyle width="320" x="0" y="0" height="240" ver="019000975" color="rgb(255,170,0)" v="01.90.00.975"/>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
    <wgtStyle width="0" x="0" y="0" height="0"/>
@@ -42,7 +42,10 @@
    </object>
   </object>
   <object class="NumericWgt" id="field1">
-   <wgtStyle font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="center" x="164" y="85" vert-align="top" text="99999" max="32767" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="50" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="center" x="164" y="85" vert-align="top" text="99999" max="1.79769e+308" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-1.79769e+308" width="50" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="double" attribute="value" tag="lbl_PassoFuso" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
   </object>
   <object class="LabelWgt" id="label1" static="true">
    <wgtStyle width="124" font-color="rgb(23,30,40)" x="18" font-sizepx="16" y="85" font-family="Tahoma" wrapping="true" cx="62" cy="9" height="19" alignment="right" vert-align="top" marker="true" text="Passo do Fuso" keypad-type="None" font-size="12"/>
@@ -53,7 +56,10 @@
    </links>
   </object>
   <object class="NumericWgt" id="field2">
-   <wgtStyle font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="center" x="164" y="131" vert-align="top" text="99999" max="32767" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="50" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="center" x="164" y="131" vert-align="top" text="99999" max="1.79769e+308" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-1.79769e+308" width="50" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="double" attribute="value" tag="lbl_TamanhoFuso" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
   </object>
   <object class="LabelWgt" id="label2" static="true">
    <wgtStyle width="137" font-color="rgb(23,30,40)" x="5" font-sizepx="16" y="131" font-family="Tahoma" wrapping="true" cx="68.50" cy="9" height="19" alignment="right" vert-align="top" marker="true" text="Tamanho do Fuso" keypad-type="None" font-size="12"/>
@@ -86,6 +92,9 @@
      <MLFontFamily L1="Tahoma"/>
     </lang>
    </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="Config_Teste@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
   </object>
  </object>
 </wgtPage>
