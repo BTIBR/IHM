@@ -1,98 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tags>
     <tag>
-        <name>grf_PreCarga</name>
-        <resourceLocator>prot1://0?HREG?400001?double</resourceLocator>
+        <name>gph_Preload</name>
+        <resourceLocator>prot1://1?HREG?400006?short</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://Tag1?double</simulator>
+        <simulator>VRBL://gph_Preload?short</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>grf_Distancia</name>
-        <resourceLocator>prot1://0?HREG?400003?double</resourceLocator>
+        <name>gph_Distance</name>
+        <resourceLocator>prot1://1?HREG?400002?short</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://grf_Distancia?double</simulator>
+        <simulator>VRBL://gph_Distance?short</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>btn_StartTeste</name>
-        <resourceLocator>prot1://0?HREG?400005.0?boolean</resourceLocator>
+        <name>btn_StartTest</name>
+        <resourceLocator>prot1://1?HREG?400001.8?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://btn_StartTeste?boolean</simulator>
+        <simulator>VRBL://btn_StartTest?boolean</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
         <name>lbl_X</name>
-        <resourceLocator>prot1://0?HREG?400006?double</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400030?short</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://lbl_X?double</simulator>
+        <simulator>VRBL://lbl_X?short</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
         <name>lbl_Y</name>
-        <resourceLocator>prot1://0?HREG?400008?double</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400034?short</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://lbl_Y?double</simulator>
+        <simulator>VRBL://lbl_Y?short</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
         <name>lbl_Z</name>
-        <resourceLocator>prot1://0?HREG?400010?double</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400038?short</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://lbl_Z?double</simulator>
+        <simulator>VRBL://lbl_Z?short</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
         <name>lbl_Rx</name>
-        <resourceLocator>prot1://0?HREG?400012?double</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400010?short</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://lbl_Rx?double</simulator>
+        <simulator>VRBL://lbl_Rx?short</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
         <name>lbl_Ry</name>
-        <resourceLocator>prot1://0?HREG?400014?double</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400014?short</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://lbl_Ry?double</simulator>
+        <simulator>VRBL://lbl_Ry?short</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
         <name>lbl_Rz</name>
-        <resourceLocator>prot1://0?HREG?400016?double</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400018?short</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://lbl_Rz?double</simulator>
+        <simulator>VRBL://lbl_Rz?short</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
         <name>btn_X+</name>
-        <resourceLocator>prot1://0?HREG?400018.0?boolean</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400001.9?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -102,7 +102,7 @@
     </tag>
     <tag>
         <name>btn_X-</name>
-        <resourceLocator>prot1://0?HREG?400018.1?boolean</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400001.10?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -112,7 +112,7 @@
     </tag>
     <tag>
         <name>btn_Y+</name>
-        <resourceLocator>prot1://0?HREG?400018.2?boolean</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400001.11?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -122,7 +122,7 @@
     </tag>
     <tag>
         <name>btn_Y-</name>
-        <resourceLocator>prot1://0?HREG?400018.3?boolean</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400001.12?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -132,7 +132,7 @@
     </tag>
     <tag>
         <name>btn_Z+</name>
-        <resourceLocator>prot1://0?HREG?400018.4?boolean</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400001.13?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -142,7 +142,7 @@
     </tag>
     <tag>
         <name>btn_Z-</name>
-        <resourceLocator>prot1://0?HREG?400018.5?boolean</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400001.14?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -152,7 +152,7 @@
     </tag>
     <tag>
         <name>btn_Rx+</name>
-        <resourceLocator>prot1://0?HREG?400018.6?boolean</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400001.2?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -162,7 +162,7 @@
     </tag>
     <tag>
         <name>btn_Rx-</name>
-        <resourceLocator>prot1://0?HREG?400018.7?boolean</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400001.3?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -172,7 +172,7 @@
     </tag>
     <tag>
         <name>btn_Ry+</name>
-        <resourceLocator>prot1://0?HREG?400018.8?boolean</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400001.4?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -182,7 +182,7 @@
     </tag>
     <tag>
         <name>btn_Ry-</name>
-        <resourceLocator>prot1://0?HREG?400018.9?boolean</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400001.5?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -192,7 +192,7 @@
     </tag>
     <tag>
         <name>btn_Rz+</name>
-        <resourceLocator>prot1://0?HREG?400018.10?boolean</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400001.6?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -202,7 +202,7 @@
     </tag>
     <tag>
         <name>btn_Rz-</name>
-        <resourceLocator>prot1://0?HREG?400018.11?boolean</resourceLocator>
+        <resourceLocator>prot1://1?HREG?400001.7?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -211,42 +211,42 @@
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>btn_EnableModoManual</name>
-        <resourceLocator>prot1://0?HREG?400018.12?boolean</resourceLocator>
+        <name>btn_EnableManualMode</name>
+        <resourceLocator>prot1://1?HREG?400001.1?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://btn_EnableModoManual?boolean</simulator>
+        <simulator>VRBL://btn_EnableManualMode?boolean</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>btn_EnableModoJoint</name>
-        <resourceLocator>prot1://0?HREG?400018.13?boolean</resourceLocator>
+        <name>btn_EnableJointMode</name>
+        <resourceLocator>prot1://1?HREG?400001.0?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://btn_EnableModoJoint?boolean</simulator>
+        <simulator>VRBL://btn_EnableJointMode?boolean</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>lbl_PassoFuso</name>
-        <resourceLocator>prot1://0?HREG?400019?double</resourceLocator>
+        <name>lbl_ScrewPitch</name>
+        <resourceLocator>prot1://1?HREG?400022?short</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://lbl_PassoFuso?double</simulator>
+        <simulator>VRBL://lbl_ScrewPitch?short</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>lbl_TamanhoFuso</name>
-        <resourceLocator>prot1://0?HREG?400021?double</resourceLocator>
+        <name>lbl_ScrewSize</name>
+        <resourceLocator>prot1://1?HREG?400026?short</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://lbl_TamanhoFuso?double</simulator>
+        <simulator>VRBL://lbl_ScrewSize?short</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tag>
-    <name>grf_PreCarga</name>
+    <name>gph_Preload</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://Tag1?double</resourceLocator>
+    <resourceLocator>VRBL://gph_Preload?short</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
 <tag>
-    <name>grf_Distancia</name>
+    <name>gph_Distance</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://grf_Distancia?double</resourceLocator>
+    <resourceLocator>VRBL://gph_Distance?short</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
 <tag>
-    <name>btn_StartTeste</name>
+    <name>btn_StartTest</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://btn_StartTeste?boolean</resourceLocator>
+    <resourceLocator>VRBL://btn_StartTest?boolean</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
@@ -31,7 +31,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://lbl_X?double</resourceLocator>
+    <resourceLocator>VRBL://lbl_X?short</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
@@ -40,7 +40,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://lbl_Y?double</resourceLocator>
+    <resourceLocator>VRBL://lbl_Y?short</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
@@ -49,7 +49,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://lbl_Z?double</resourceLocator>
+    <resourceLocator>VRBL://lbl_Z?short</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
@@ -58,7 +58,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://lbl_Rx?double</resourceLocator>
+    <resourceLocator>VRBL://lbl_Rx?short</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
@@ -67,7 +67,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://lbl_Ry?double</resourceLocator>
+    <resourceLocator>VRBL://lbl_Ry?short</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
@@ -76,7 +76,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://lbl_Rz?double</resourceLocator>
+    <resourceLocator>VRBL://lbl_Rz?short</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
@@ -189,38 +189,38 @@
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
 <tag>
-    <name>btn_EnableModoManual</name>
+    <name>btn_EnableManualMode</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://btn_EnableModoManual?boolean</resourceLocator>
+    <resourceLocator>VRBL://btn_EnableManualMode?boolean</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
 <tag>
-    <name>btn_EnableModoJoint</name>
+    <name>btn_EnableJointMode</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://btn_EnableModoJoint?boolean</resourceLocator>
+    <resourceLocator>VRBL://btn_EnableJointMode?boolean</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
 <tag>
-    <name>lbl_PassoFuso</name>
+    <name>lbl_ScrewPitch</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://lbl_PassoFuso?double</resourceLocator>
+    <resourceLocator>VRBL://lbl_ScrewPitch?short</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
 <tag>
-    <name>lbl_TamanhoFuso</name>
+    <name>lbl_ScrewSize</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://lbl_TamanhoFuso?double</resourceLocator>
+    <resourceLocator>VRBL://lbl_ScrewSize?short</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>

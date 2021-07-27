@@ -3,7 +3,7 @@
   <id>prot1</id>
   <name>MODT</name>
   <file>MODT</file>
-  <configuration>CfgVer=1 prefix=NEON ipAddress=192.168.0.200 port=502 timeout=2000 modbusUnitID=1 maxOptLen=250 maxBitOptLen=2000 presetFunction=16 forceFunction=15 model=1 </configuration>
+  <configuration>CfgVer=1 prefix=XP340 ipAddress=192.168.0.50 port=502 timeout=2000 modbusUnitID=1 maxOptLen=250 maxBitOptLen=2000 presetFunction=16 forceFunction=15 model=1 </configuration>
   <enableOptimization>true</enableOptimization>
   <enableDatagram>false</enableDatagram>
   <offline_ort>90000</offline_ort>

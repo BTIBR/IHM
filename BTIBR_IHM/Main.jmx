@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project">
- <object pageName="Main" pageSize="320,240" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" staticFile="opt/Main.png" id="Main" staticOptEnable="true">
+ <object pageName="Main" pageSize="320,240" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" staticFile="opt/Main.png" id="Main" staticOptEnable="true">
   <wgtStyle width="320" x="0" y="0" height="240" ver="019000975" color="rgb(255,170,0)" v="01.90.00.975"/>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
    <wgtStyle width="0" x="0" y="0" height="0"/>
@@ -25,8 +25,8 @@
    <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd1">
     <wgtStyle width="74.54" x="13.73" y="4.58" bdrImageSize="38.00,37.00" fill="rgb(40,40,40)" cx="62.46" form="standard" cy="22.31" bdrSize="0.11,0.11,0.08,0.09" height="24.85" releasePath="images/btn_shiney_rect_1.svg" needlePath="images/btn_shiney_rect_2.svg" type="momentary" value="0"/>
     <links>
-     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_StartTeste"/>
-     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_StartTeste"/>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_StartTest"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_StartTest"/>
     </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label9">
@@ -78,7 +78,7 @@
     <attr attrName="ymax" alias="XYCurveWgt1.maxy;XYCurveWgt2.maxy;XYCurveWgt3.maxy;XYCurveWgt4.maxy;XYCurveWgt5.maxy;LabelsWgt1.max"/>
    </links>
    <object class="LabelWgt" id="label3" static="true">
-    <wgtStyle width="256.29" x="52.81" font-sizepx="16" y="0" font-family="Tahoma" font-bold="true" cx="126.32" cy="9.33" height="19.70" alignment="center" vert-align="top" text="Teste de Pré-Carga" keypad-type="None" font-size="12"/>
+    <wgtStyle width="256.29" x="52.81" font-sizepx="16" y="0" font-family="Tahoma" font-bold="true" cx="126.32" cy="9.33" height="19.70" alignment="center" vert-align="top" text="Scatter Diagram" keypad-type="None" font-size="12"/>
     <links>
      <lang class="MLTextLink" textid="22">
       <MLFontFamily L1="Tahoma"/>

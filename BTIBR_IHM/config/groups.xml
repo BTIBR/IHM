@@ -2,8 +2,8 @@
  <group Type="Auto">
   <name>Config_Leticya@$GroupSubscrWgt@$0</name>
   <active>false</active>
-  <tag>btn_EnableModoJoint</tag>
-  <tag>btn_EnableModoManual</tag>
+  <tag>btn_EnableJointMode</tag>
+  <tag>btn_EnableManualMode</tag>
   <tag>lbl_Rx</tag>
   <tag>lbl_Ry</tag>
   <tag>lbl_Rz</tag>
@@ -14,7 +14,7 @@
  <group Type="Auto">
   <name>Config_Teste@$GroupSubscrWgt@$0</name>
   <active>false</active>
-  <tag>lbl_PassoFuso</tag>
-  <tag>lbl_TamanhoFuso</tag>
+  <tag>lbl_ScrewPitch</tag>
+  <tag>lbl_ScrewSize</tag>
  </group>
 </groups>

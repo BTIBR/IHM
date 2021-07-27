@@ -443,7 +443,7 @@
    <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="btnStd14">
     <wgtStyle width="29.96" x="5.52" forcePaint="8" y="5.52" fill="rgb(120,120,120)" cx="14.62" form="standard" cy="14.98" height="29.96" releasePath="images/btn_plastic_round_1.svg" needlePath="images/btn_plastic_round_2.svg" type="maintained" value="0"/>
     <dataLinks>
-     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="btn_EnableModoJoint" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="btn_EnableJointMode" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
     </dataLinks>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label22" static="true">
@@ -460,7 +460,7 @@
    <object class="IndicatorWgt" hmiStyle="type:light" id="inset_oval_ind3">
     <wgtStyle width="9.46" imagePath="images/li_inset_round.svg" x="18.92" forcePaint="9" y="8.67" cx="4.37" cy="3.94" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="9.46" stroke="rgb(255,255,255)" stroke-width="0"/>
     <dataLinks>
-     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="btn_EnableModoJoint" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="btn_EnableJointMode" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
     </dataLinks>
    </object>
   </object>
@@ -480,7 +480,7 @@
    <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="btnStd15">
     <wgtStyle width="29.96" x="5.52" forcePaint="8" y="5.52" fill="rgb(120,120,120)" cx="14.62" form="standard" cy="14.98" height="29.96" releasePath="images/btn_plastic_round_1.svg" needlePath="images/btn_plastic_round_2.svg" type="maintained" value="0"/>
     <dataLinks>
-     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="btn_EnableModoManual" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="btn_EnableManualMode" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
     </dataLinks>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label24" static="true">
@@ -497,7 +497,7 @@
    <object class="IndicatorWgt" hmiStyle="type:light" id="inset_oval_ind1">
     <wgtStyle width="9.46" imagePath="images/li_inset_round.svg" x="18.92" forcePaint="9" y="8.67" cx="4.37" cy="3.94" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="9.46" stroke="rgb(255,255,255)" stroke-width="0"/>
     <dataLinks>
-     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="btn_EnableModoManual" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="btn_EnableManualMode" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
     </dataLinks>
    </object>
   </object>
