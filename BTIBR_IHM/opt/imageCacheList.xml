@@ -15,4 +15,6 @@
  <file fill="rgb(246,246,246)" imgSize="105,40" stroke="none" numUses="1" isSvgFile="true" file="images/btn_kbdwht_long_1_rev1.svg" numSizes="1" prePath="Keypads"/>
  <file fill="rgb(23,30,40)" imgSize="43,37" stroke="none" numUses="1" isSvgFile="true" file="images/ic_pl2_117.svg" numSizes="1" prePath="Keypads"/>
  <file fill="rgb(23,30,40)" imgSize="43,37" stroke="none" numUses="1" isSvgFile="true" file="images/ic_pl2_116_rev1.svg" numSizes="1" prePath="Keypads"/>
+ <file fill="rgb(40,40,40)" imgSize="49,25" stroke="none" numUses="1" isSvgFile="true" file="images/btn_shiney_rect_2.svg" numSizes="1"/>
+ <file fill="rgb(40,40,40)" imgSize="49,25" stroke="none" numUses="1" isSvgFile="true" file="images/btn_shiney_rect_1.svg" numSizes="1"/>
 </files>

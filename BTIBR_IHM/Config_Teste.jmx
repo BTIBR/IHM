@@ -8,9 +8,9 @@
    </langs>
    <MLTexts>
     <MLText L1="Voltar" id="0"/>
+    <MLText L1="Comprimento do Fuso" id="1"/>
     <MLText L1="Passo do Fuso" id="3"/>
     <MLText L1="mm/rev" id="4"/>
-    <MLText L1="Tamanho do Fuso" id="5"/>
     <MLText L1="mm" id="6"/>
     <MLText L1="Configurações do Teste" id="22"/>
    </MLTexts>
@@ -48,7 +48,7 @@
    </dataLinks>
   </object>
   <object class="LabelWgt" id="label1" static="true">
-   <wgtStyle width="124" font-color="rgb(23,30,40)" x="18" font-sizepx="16" y="85" font-family="Tahoma" wrapping="true" cx="62" cy="9" height="19" alignment="right" vert-align="top" marker="true" text="Passo do Fuso" keypad-type="None" font-size="12"/>
+   <wgtStyle width="124" font-color="rgb(23,30,40)" x="18" font-sizepx="13" y="85" font-family="Tahoma" wrapping="true" cx="62" cy="9" height="19" alignment="right" vert-align="top" marker="true" text="Passo do Fuso" keypad-type="None" font-size="10"/>
    <links>
     <lang class="MLTextLink" textid="3">
      <MLFontFamily L1="Tahoma"/>
@@ -62,15 +62,15 @@
    </dataLinks>
   </object>
   <object class="LabelWgt" id="label2" static="true">
-   <wgtStyle width="137" font-color="rgb(23,30,40)" x="5" font-sizepx="16" y="131" font-family="Tahoma" wrapping="true" cx="68.50" cy="9" height="19" alignment="right" vert-align="top" marker="true" text="Tamanho do Fuso" keypad-type="None" font-size="12"/>
+   <wgtStyle width="137" font-color="rgb(23,30,40)" x="5" font-sizepx="13" y="131" font-family="Tahoma" wrapping="true" cx="68.50" cy="9" height="19" alignment="right" vert-align="top" marker="true" text="Comprimento do Fuso" keypad-type="None" font-size="10"/>
    <links>
-    <lang class="MLTextLink" textid="5">
+    <lang class="MLTextLink" textid="1">
      <MLFontFamily L1="Tahoma"/>
     </lang>
    </links>
   </object>
   <object class="LabelWgt" id="label3" static="true">
-   <wgtStyle width="62" font-color="rgb(23,30,40)" x="242" font-sizepx="16" y="86" font-family="Tahoma" wrapping="true" cx="31" cy="8.53" height="18" vert-align="top" marker="true" text="mm/rev" keypad-type="None" font-size="12"/>
+   <wgtStyle width="62" font-color="rgb(23,30,40)" x="242" font-sizepx="13" y="86" font-family="Tahoma" wrapping="true" cx="31" cy="8.53" height="18" vert-align="top" marker="true" text="mm/rev" keypad-type="None" font-size="10"/>
    <links>
     <lang class="MLTextLink" textid="4">
      <MLFontFamily L1="Tahoma"/>
@@ -78,7 +78,7 @@
    </links>
   </object>
   <object class="LabelWgt" id="label4" static="true">
-   <wgtStyle width="62" font-color="rgb(23,30,40)" x="242" font-sizepx="16" y="132" font-family="Tahoma" wrapping="true" cx="31" cy="8.53" height="18" vert-align="top" marker="true" text="mm" keypad-type="None" font-size="12"/>
+   <wgtStyle width="62" font-color="rgb(23,30,40)" x="242" font-sizepx="13" y="132" font-family="Tahoma" wrapping="true" cx="31" cy="8.53" height="18" vert-align="top" marker="true" text="mm" keypad-type="None" font-size="10"/>
    <links>
     <lang class="MLTextLink" textid="6">
      <MLFontFamily L1="Tahoma"/>

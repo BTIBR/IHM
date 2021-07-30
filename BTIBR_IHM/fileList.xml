@@ -1,5 +1,5 @@
 <JMFiles>
- <ProjectInfo Size="2174949" AllowedSize="31457280"/>
+ <ProjectInfo Size="2176243" AllowedSize="31457280"/>
  <files>
   <file size="39210" md5="d8a37f593ae8592376f5c9399e2f9e8b" name="Config_Leticya.jmx"/>
   <file size="66" md5="8c8bfbd55c7a8994b71b5f87a31bd69b" name="Config_Leticya.js"/>
@@ -27,7 +27,7 @@
   <file size="5832" md5="bc4746991fa32c007852a3966675e92d" name="opt/Config_Teste.png"/>
   <file size="814" md5="d9f5ce081b115e19ae3b6cfcc4123e5a" name="opt/Main.png"/>
   <file size="5147" md5="6dbc5d7eeafcb74b3cb8280eb26fea07" name="opt/MainScatterDiagram1.png"/>
-  <file size="6823" md5="48df2a6be08c760f5195876400333951" name="BTIBR_IHM.jpr"/>
+  <file size="6822" md5="111d09219ded1de428077b2b894be5d9" name="BTIBR_IHM.jpr"/>
   <file size="28793" md5="d46b62688f198e37f3427fa470698428" name="Keypads\Alphabet.jmx"/>
   <file size="1790" md5="b142ce8345c1ecf4788decb22f2bf9d4" name="Keypads\images\ic_cn2_03.svg"/>
   <file size="8539" md5="1cfa9bc847fc6c3e1ca4497b22b77088" name="Keypads\images\btn_kbdwht_std_1_rev1.svg"/>
@@ -82,7 +82,7 @@
   <file size="16" md5="8d0263d50231ea6da87aa07fead098fb" name="config\AuditTrail.xml"/>
   <file size="44" md5="f762c3dd92f9ab00a487640ba65bbe64" name="config\datatransfers.xml"/>
   <file size="229" md5="393498678e4be0b6c957df0f7c17610c" name="config\ScreenSaver.xml"/>
-  <file size="2497" md5="c60b0778cc6382e9eb4c21c689827ffa" name="opt\imageCacheList.xml"/>
+  <file size="4210" md5="400b928ec3e22c4e10637c244ad0ffcd" name="opt\imageCacheList.xml"/>
   <file size="867988" md5="ae4aef91c1d0a14fb7da1f924d04c4e9" name="tahomabd.ttf"/>
   <file size="939280" md5="013ec165105a40eb43bc1130d530bd1f" name="tahoma.ttf"/>
   <file size="113" md5="ee4de40ddbb1929c1716830a1027f65c" name="fonts.xml"/>

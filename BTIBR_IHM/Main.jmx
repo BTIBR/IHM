@@ -78,7 +78,7 @@
     <attr attrName="ymax" alias="XYCurveWgt1.maxy;XYCurveWgt2.maxy;XYCurveWgt3.maxy;XYCurveWgt4.maxy;XYCurveWgt5.maxy;LabelsWgt1.max"/>
    </links>
    <object class="LabelWgt" id="label3" static="true">
-    <wgtStyle width="256.29" x="52.81" font-sizepx="16" y="0" font-family="Tahoma" font-bold="true" cx="126.32" cy="9.33" height="19.70" alignment="center" vert-align="top" text="Scatter Diagram" keypad-type="None" font-size="12"/>
+    <wgtStyle width="256.29" x="52.81" font-sizepx="16" y="0" font-family="Tahoma" font-bold="true" cx="126.32" cy="9.33" height="19.70" alignment="center" vert-align="top" text="Teste Pré-Carga" keypad-type="None" font-size="12"/>
     <links>
      <lang class="MLTextLink" textid="22">
       <MLFontFamily L1="Tahoma"/>

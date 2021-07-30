@@ -9,14 +9,14 @@
   <offline_ort>90000</offline_ort>
   <offline_opt>false</offline_opt>
   <offline_rpt>3</offline_rpt>
-  <dictionaryname></dictionaryname>
-  <enableSimProtocol>true</enableSimProtocol>
+  <dictionaryname/>
   <displayName>Modbus TCP</displayName>
+  <enableSimProtocol>false</enableSimProtocol>
  </protocol>
  <protocol>
   <id>prot5</id>
   <name>VRBL</name>
-  <file></file>
+  <file/>
   <configuration>CfgVer=1 timeout=100</configuration>
   <enableOptimization>true</enableOptimization>
   <enableDatagram>true</enableDatagram>
