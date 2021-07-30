@@ -216,7 +216,7 @@
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
 <tag>
-    <name>lbl_ScrewSize</name>
+    <name>lbl_ScrewLenght</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>

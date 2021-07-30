@@ -14,7 +14,7 @@
  <group Type="Auto">
   <name>Config_Teste@$GroupSubscrWgt@$0</name>
   <active>false</active>
+  <tag>lbl_ScrewLenght</tag>
   <tag>lbl_ScrewPitch</tag>
-  <tag>lbl_ScrewSize</tag>
  </group>
 </groups>
