@@ -91,7 +91,7 @@
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>btn_X+</name>
+        <name>btn_M1+</name>
         <resourceLocator>prot1://1?HREG?400001.9?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -101,7 +101,7 @@
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>btn_X-</name>
+        <name>btn_M1-</name>
         <resourceLocator>prot1://1?HREG?400001.10?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -111,7 +111,7 @@
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>btn_Y+</name>
+        <name>btn_M2+</name>
         <resourceLocator>prot1://1?HREG?400001.11?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -121,7 +121,7 @@
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>btn_Y-</name>
+        <name>btn_M2-</name>
         <resourceLocator>prot1://1?HREG?400001.12?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -131,7 +131,7 @@
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>btn_Z+</name>
+        <name>btn_M3+</name>
         <resourceLocator>prot1://1?HREG?400001.13?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -141,7 +141,7 @@
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>btn_Z-</name>
+        <name>btn_M3-</name>
         <resourceLocator>prot1://1?HREG?400001.14?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -151,7 +151,7 @@
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>btn_Rx+</name>
+        <name>btn_M4+</name>
         <resourceLocator>prot1://1?HREG?400001.2?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -161,7 +161,7 @@
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>btn_Rx-</name>
+        <name>btn_M4-</name>
         <resourceLocator>prot1://1?HREG?400001.3?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -171,7 +171,7 @@
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>btn_Ry+</name>
+        <name>btn_M5+</name>
         <resourceLocator>prot1://1?HREG?400001.4?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -181,7 +181,7 @@
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>btn_Ry-</name>
+        <name>btn_M5-</name>
         <resourceLocator>prot1://1?HREG?400001.5?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -191,7 +191,7 @@
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>btn_Rz+</name>
+        <name>btn_M6+</name>
         <resourceLocator>prot1://1?HREG?400001.6?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -201,7 +201,7 @@
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
-        <name>btn_Rz-</name>
+        <name>btn_M6-</name>
         <resourceLocator>prot1://1?HREG?400001.7?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -217,16 +217,6 @@
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
         <simulator>VRBL://btn_EnableManualMode?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-    </tag>
-    <tag>
-        <name>btn_EnableJointMode</name>
-        <resourceLocator>prot1://1?HREG?400001.0?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://btn_EnableJointMode?boolean</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
@@ -247,6 +237,246 @@
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
         <simulator>VRBL://lbl_ScrewSize?short</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_LED_red</name>
+        <resourceLocator>prot1://0?HREG?400042.0?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_LED_vm?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_LED_blue</name>
+        <resourceLocator>prot1://0?HREG?400042.1?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_LED_blue?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_LED_orange</name>
+        <resourceLocator>prot1://0?HREG?400042.2?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_LED_orange?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_LED_green</name>
+        <resourceLocator>prot1://0?HREG?400042.3?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_LED_green?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_M7+</name>
+        <resourceLocator>prot1://0?HREG?400042.4?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_M7+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_M7-</name>
+        <resourceLocator>prot1://0?HREG?400042.5?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_M7-?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_M8+</name>
+        <resourceLocator>prot1://0?HREG?400042.6?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_M8+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>btn_M8-</name>
+        <resourceLocator>prot1://0?HREG?400042.7?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://btn_M8-?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M1_ls+</name>
+        <resourceLocator>prot1://0?HREG?400043.0?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M1_ls+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M1_ls-</name>
+        <resourceLocator>prot1://0?HREG?400043.1?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M1_ls-?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M2_ls+</name>
+        <resourceLocator>prot1://0?HREG?400043.2?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M2_ls+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M2_ls-</name>
+        <resourceLocator>prot1://0?HREG?400043.3?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M2_ls-?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M3_ls+</name>
+        <resourceLocator>prot1://0?HREG?400043.4?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M3_ls+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M3_ls-</name>
+        <resourceLocator>prot1://0?HREG?400043.5?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M3_ls-?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M4_ls+</name>
+        <resourceLocator>prot1://0?HREG?400043.6?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M4_ls+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M4_ls-</name>
+        <resourceLocator>prot1://0?HREG?400043.7?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M4_ls-?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M5_ls+</name>
+        <resourceLocator>prot1://0?HREG?400043.8?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M5_ls+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M5_ls-</name>
+        <resourceLocator>prot1://0?HREG?400043.9?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M5_ls-?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M6_ls+</name>
+        <resourceLocator>prot1://0?HREG?400043.10?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M6_ls+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M6_ls-</name>
+        <resourceLocator>prot1://0?HREG?400043.11?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M6_ls-?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M7_ls+</name>
+        <resourceLocator>prot1://0?HREG?400043.12?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M7_ls+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M7_ls-</name>
+        <resourceLocator>prot1://0?HREG?400043.13?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M7_ls-?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M8_ls+</name>
+        <resourceLocator>prot1://0?HREG?400043.14?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M8_ls+?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>led_M8_ls-</name>
+        <resourceLocator>prot1://0?HREG?400043.15?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://led_M8_ls-?boolean</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>

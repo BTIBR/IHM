@@ -1,0 +1,807 @@
+<wgtPage projectType="HMI Project">
+ <object pageName="Manual_Mode" pageSize="320,240" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" id="Manual_Mode" staticOptEnable="true">
+  <wgtStyle width="320" x="0" y="0" height="240" ver="019000975" color="rgb(255,170,0)" v="01.90.00.975"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" id="1"/>
+    <MLText L1="Op. Manual" id="24"/>
+    <MLText L1="Voltar" id="38"/>
+    <MLText L1="Vermelho" id="44"/>
+    <MLText L1="Verde" id="46"/>
+    <MLText L1="Laranja" id="47"/>
+    <MLText L1="Azul" id="48"/>
+    <MLText L1="Poste Sinaleiro" id="49"/>
+    <MLText L1="Motor Fuso" id="67"/>
+    <MLText L1="Garra" id="68"/>
+    <MLText L1="Fim de curso&#xa;+        -" id="70"/>
+    <MLText L1="" id="71"/>
+    <MLText L1="1" id="72"/>
+    <MLText L1="2" id="74"/>
+    <MLText L1="3" id="75"/>
+    <MLText L1="4" id="76"/>
+    <MLText L1="5" id="77"/>
+    <MLText L1="6" id="78"/>
+    <MLText L1="7" id="79"/>
+    <MLText L1="8" id="80"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="BtnIllum1" customType="Button With Light">
+   <wgtStyle width="32" x="12" y="42" cx="16" cy="15" height="30"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image29" static="true">
+    <wgtStyle width="32" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="15.72" cy="15" height="30"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="btnStd15">
+    <wgtStyle width="23.38" x="4.31" forcePaint="8" y="4.04" fill="rgb(120,120,120)" cx="11.41" form="standard" cy="10.96" height="21.92" releasePath="images/btn_plastic_round_1.svg" needlePath="images/btn_plastic_round_2.svg" type="maintained" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="btn_LED_red" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label24" static="true">
+    <wgtStyle width="20.31" font-color="rgb(40,40,40)" x="5.54" font-sizepx="13" y="6.34" font-family="Tahoma" wrapping="true" cx="13.54" cy="10.96" height="17.30" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image30" static="true">
+    <wgtStyle width="11.08" enableCache="false" x="9.85" y="12.70" cx="5.54" cy="4.04" height="9.23"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="type:light" id="inset_oval_ind1">
+    <wgtStyle width="7.38" imagePath="images/li_inset_round.svg" x="14.77" forcePaint="9" y="6.34" cx="3.41" cy="2.88" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="6.92" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="btn_LED_red" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="Manual_Mode@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="BtnIllum2" customType="Button With Light">
+   <wgtStyle width="32" x="12" y="141.50" cx="16" cy="15" height="30"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image1" static="true">
+    <wgtStyle width="32" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="15.72" cy="15" height="30"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="btnStd1">
+    <wgtStyle width="23.38" x="4.31" forcePaint="8" y="4.04" fill="rgb(120,120,120)" cx="11.41" form="standard" cy="10.96" height="21.92" releasePath="images/btn_plastic_round_1.svg" needlePath="images/btn_plastic_round_2.svg" type="maintained" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="btn_LED_green" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label1" static="true">
+    <wgtStyle width="20.31" font-color="rgb(40,40,40)" x="5.54" font-sizepx="13" y="6.34" font-family="Tahoma" wrapping="true" cx="13.54" cy="10.96" height="17.30" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image2" static="true">
+    <wgtStyle width="11.08" enableCache="false" x="9.85" y="12.70" cx="5.54" cy="4.04" height="9.23"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="type:light" id="inset_oval_ind2">
+    <wgtStyle width="7.38" imagePath="images/li_inset_round.svg" x="14.77" forcePaint="9" y="6.34" cx="3.41" cy="2.88" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="6.92" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="btn_LED_red" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnIllum3" customType="Button With Light">
+   <wgtStyle width="32" x="12" y="108" cx="16" cy="15" height="30"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image3" static="true">
+    <wgtStyle width="32" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="15.72" cy="15" height="30"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="btnStd2">
+    <wgtStyle width="23.38" x="4.31" forcePaint="8" y="4.04" fill="rgb(120,120,120)" cx="11.41" form="standard" cy="10.96" height="21.92" releasePath="images/btn_plastic_round_1.svg" needlePath="images/btn_plastic_round_2.svg" type="maintained" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="btn_LED_orange" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label2" static="true">
+    <wgtStyle width="20.31" font-color="rgb(40,40,40)" x="5.54" font-sizepx="13" y="6.34" font-family="Tahoma" wrapping="true" cx="13.54" cy="10.96" height="17.30" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image4" static="true">
+    <wgtStyle width="11.08" enableCache="false" x="9.85" y="12.70" cx="5.54" cy="4.04" height="9.23"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="type:light" id="inset_oval_ind3">
+    <wgtStyle width="7.38" imagePath="images/li_inset_round.svg" x="14.77" forcePaint="9" y="6.34" cx="3.41" cy="2.88" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="6.92" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="btn_LED_orange" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnIllum4" customType="Button With Light">
+   <wgtStyle width="32" x="12" y="75" cx="16" cy="15" height="30"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image5" static="true">
+    <wgtStyle width="32" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="15.72" cy="15" height="30"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="btnStd3">
+    <wgtStyle width="23.38" x="4.31" forcePaint="8" y="4.04" fill="rgb(120,120,120)" cx="11.41" form="standard" cy="10.96" height="21.92" releasePath="images/btn_plastic_round_1.svg" needlePath="images/btn_plastic_round_2.svg" type="maintained" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="btn_LED_blue" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label3" static="true">
+    <wgtStyle width="20.31" font-color="rgb(40,40,40)" x="5.54" font-sizepx="13" y="6.34" font-family="Tahoma" wrapping="true" cx="13.54" cy="10.96" height="17.30" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image6" static="true">
+    <wgtStyle width="11.08" enableCache="false" x="9.85" y="12.70" cx="5.54" cy="4.04" height="9.23"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="type:light" id="inset_oval_ind4">
+    <wgtStyle width="7.38" imagePath="images/li_inset_round.svg" x="14.77" forcePaint="9" y="6.34" cx="3.41" cy="2.88" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="6.92" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="btn_LED_blue" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnIllum5" customType="Button With Light">
+   <wgtStyle width="32" x="106" y="190" cx="16" cy="15" height="30"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image7" static="true">
+    <wgtStyle width="32" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="15.72" cy="15" height="30"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="btnStd4">
+    <wgtStyle width="23.38" x="4.31" forcePaint="8" y="4.04" fill="rgb(120,120,120)" cx="11.41" form="standard" cy="10.96" height="21.92" releasePath="images/btn_plastic_round_1.svg" needlePath="images/btn_plastic_round_2.svg" type="maintained" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="btn_EnableManualMode" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label4" static="true">
+    <wgtStyle width="20.31" font-color="rgb(40,40,40)" x="5.54" font-sizepx="13" y="6.34" font-family="Tahoma" wrapping="true" cx="13.54" cy="10.96" height="17.30" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image8" static="true">
+    <wgtStyle width="11.08" enableCache="false" x="9.85" y="12.70" cx="5.54" cy="4.04" height="9.23"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="type:light" id="inset_oval_ind5">
+    <wgtStyle width="7.38" imagePath="images/li_inset_round.svg" x="14.77" forcePaint="9" y="6.34" cx="3.41" cy="2.88" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="6.92" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="btn_EnableManualMode" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label25" static="true">
+   <wgtStyle width="53" font-color="rgb(23,30,40)" x="95" font-sizepx="10" y="223" font-family="Tahoma" wrapping="true" cx="26.50" cy="5.68" height="12" alignment="center" vert-align="top" marker="true" text="Op. Manual" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="24">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnStd5" customType="Button">
+   <wgtStyle width="67" x="165" y="201" cx="33.50" cy="17" height="34"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="67" enableCache="false" x="0" y="0" visibility="false" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="53.79" cy="29.70" bdrSize="0.17,0.14,0.16,0.16" height="34" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd1">
+    <wgtStyle width="48.96" x="9.02" y="4.58" bdrImageSize="38.00,37.00" fill="rgb(40,40,40)" cx="41.03" form="standard" cy="22.31" bdrSize="0.11,0.11,0.08,0.09" height="24.85" releasePath="images/btn_shiney_rect_1.svg" needlePath="images/btn_shiney_rect_2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="Main.jmx" class="LoadPageAction" attribute="onMouseClick" actionName="LoadPage" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label9">
+    <wgtStyle width="41.23" font-color="rgb(255,255,255)" x="11.59" forcePaint="1" font-sizepx="12" y="6.54" font-family="Tahoma" wrapping="true" cx="39.93" cy="19.18" height="20.27" alignment="center" vert-align="middle" text="Voltar" keypad-type="None" font-size="9"/>
+    <links>
+     <lang class="MLTextLink" textid="38">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image18" static="true">
+    <wgtStyle width="25.77" enableCache="false" x="19.32" y="11.12" cx="17.22" cy="6.85" height="11.12"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label5" static="true">
+   <wgtStyle width="52" font-color="rgb(23,30,40)" x="50" font-sizepx="12" y="48" font-family="Tahoma" wrapping="true" cx="26" cy="8.53" height="18" vert-align="top" marker="true" text="Vermelho" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="44">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label6" static="true">
+   <wgtStyle width="52" font-color="rgb(23,30,40)" x="50" font-sizepx="12" y="148.50" font-family="Tahoma" wrapping="true" cx="26" cy="7.58" height="16" vert-align="top" marker="true" text="Verde" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="46">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label7" static="true">
+   <wgtStyle width="52" font-color="rgb(23,30,40)" x="50" font-sizepx="12" y="114" font-family="Tahoma" wrapping="true" cx="26" cy="9" height="19" vert-align="top" marker="true" text="Laranja" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="47">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label8" static="true">
+   <wgtStyle width="52" font-color="rgb(23,30,40)" x="50" font-sizepx="12" y="81" font-family="Tahoma" wrapping="true" cx="26" cy="8.53" height="18" vert-align="top" marker="true" text="Azul" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="48">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label10" static="true">
+   <wgtStyle width="95" font-color="rgb(23,30,40)" x="12" font-sizepx="12" y="19" font-family="Tahoma" font-bold="true" wrapping="true" cx="47.50" cy="8.53" height="18" vert-align="top" marker="true" text="Poste Sinaleiro" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="49">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label11" static="true">
+   <wgtStyle width="95" font-color="rgb(23,30,40)" x="127" font-sizepx="16" y="102" font-family="Tahoma" font-bold="true" wrapping="true" cx="47.50" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Motor Fuso" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="67">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnStd10" customType="Button">
+   <wgtStyle width="52" x="121" y="132" cx="26" cy="14" height="28"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image25" static="true">
+    <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd10">
+    <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M8+"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M8+"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label13" static="true">
+    <wgtStyle width="43.61" font-color="rgb(40,40,40)" x="2.80" font-sizepx="13" y="3.68" font-family="Tahoma" wrapping="true" cx="21.86" cy="9.13" height="17.68" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image26">
+    <wgtStyle width="16.77" imagePath="images\ic_ma1_012.svg" enableCache="false" x="16.22" forcePaint="1" y="6.63" cx="8.54" cy="7" height="14"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd6" customType="Button">
+   <wgtStyle width="52" x="177" y="132" cx="26" cy="14" height="28"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image9" static="true">
+    <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd2">
+    <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M8-"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M8-"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label12" static="true">
+    <wgtStyle width="43.61" font-color="rgb(40,40,40)" x="2.80" font-sizepx="13" y="3.68" font-family="Tahoma" wrapping="true" cx="21.86" cy="9.13" height="17.68" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image10">
+    <wgtStyle width="16.77" imagePath="images\IC_ma1_011_rev1.svg" enableCache="false" x="16.22" forcePaint="1" y="6.63" cx="8.54" cy="7" height="14"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label14" static="true">
+   <wgtStyle width="95" font-color="rgb(23,30,40)" x="127" font-sizepx="16" y="25" font-family="Tahoma" font-bold="true" wrapping="true" cx="47.50" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Garra" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="68">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="Button">
+   <wgtStyle width="52" x="121" y="55" cx="26" cy="14" height="28"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image11" static="true">
+    <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd3">
+    <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M7+"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M7+"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label15" static="true">
+    <wgtStyle width="43.61" font-color="rgb(40,40,40)" x="2.80" font-sizepx="13" y="3.68" font-family="Tahoma" wrapping="true" cx="21.86" cy="9.13" height="17.68" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image12">
+    <wgtStyle width="16.77" imagePath="images\ic_ma1_012.svg" enableCache="false" x="16.22" forcePaint="1" y="6.63" cx="8.54" cy="7" height="14"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd8" customType="Button">
+   <wgtStyle width="52" x="177" y="55" cx="26" cy="14" height="28"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image13" static="true">
+    <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd4">
+    <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M7-"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M7-"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label16" static="true">
+    <wgtStyle width="43.61" font-color="rgb(40,40,40)" x="2.80" font-sizepx="13" y="3.68" font-family="Tahoma" wrapping="true" cx="21.86" cy="9.13" height="17.68" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image14">
+    <wgtStyle width="16.77" imagePath="images\IC_ma1_011_rev1.svg" enableCache="false" x="16.22" forcePaint="1" y="6.63" cx="8.54" cy="7" height="14"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd1" customType="Light">
+   <wgtStyle width="21" x="250" y="32" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image15" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21" mtx="1,0,0,0,1,0,0,0,1"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind03">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)" mtx="1,0,0,0,1,0,0,0,1"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label17" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" mtx="1,0,0,0,1,0,0,0,1" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="71">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon2" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06" mtx="1,0,0,0,1,0,0,0,1"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label18" static="true">
+   <wgtStyle width="75" font-color="rgb(23,30,40)" x="236" font-sizepx="10" y="6" font-family="Tahoma" font-bold="true" wrapping="true" cx="37.50" cy="10.42" height="22" alignment="center" vert-align="top" marker="true" text="Fim de curso&#xa;+        -" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="70">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LightsStd2" customType="Light">
+   <wgtStyle width="21" x="250" y="56" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image17" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind1">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label19" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon1" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd3" customType="Light">
+   <wgtStyle width="21" x="250" y="80" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image19" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind2">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label20" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon3" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd4" customType="Light">
+   <wgtStyle width="21" x="250" y="104" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image20" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind3">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label21" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon4" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd5" customType="Light">
+   <wgtStyle width="21" x="250" y="128" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image21" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind4">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label22" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon5" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd6" customType="Light">
+   <wgtStyle width="21" x="250" y="152" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image22" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind5">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label23" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon6" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd7" customType="Light">
+   <wgtStyle width="21" x="250" y="176" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image23" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind6">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label26" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon7" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd8" customType="Light">
+   <wgtStyle width="21" x="250" y="200" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image24" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind7">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label27" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon8" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd9" customType="Light">
+   <wgtStyle width="21" x="279" y="32" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image27" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind8">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label28" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon9" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd10" customType="Light">
+   <wgtStyle width="21" x="279" y="56" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image28" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind9">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label29" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon10" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd11" customType="Light">
+   <wgtStyle width="21" x="279" y="80" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image31" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind10">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label30" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon11" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd12" customType="Light">
+   <wgtStyle width="21" x="279" y="104" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image32" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind11">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label31" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon12" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd13" customType="Light">
+   <wgtStyle width="21" x="279" y="128" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image33" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind12">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label32" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon13" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd14" customType="Light">
+   <wgtStyle width="21" x="279" y="152" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image34" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind13">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label33" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon14" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd15" customType="Light">
+   <wgtStyle width="21" x="279" y="176" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image35" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind14">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label34" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon15" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd16" customType="Light">
+   <wgtStyle width="21" x="279" y="200" cx="10.50" cy="10.50" height="21"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image36" static="true">
+    <wgtStyle width="21" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="10.31" cy="10.29" height="21"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind15">
+    <wgtStyle width="15.35" imagePath="images/li_round_shiney1.svg" x="2.83" y="2.42" cx="9.93" cy="6.43" bkgColor="rgb(120,120,120);rgb(0,128,0)" height="15.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label35" static="true">
+    <wgtStyle width="13.73" x="3.63" font-sizepx="13" y="3.63" font-family="Tahoma" cx="6.87" cy="6.86" height="14.13" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon16" static="true">
+    <wgtStyle width="6.06" enableCache="true" x="7.27" y="7.67" cx="3.05" cy="3" height="6.06"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label36" static="true">
+   <wgtStyle width="21" font-color="rgb(23,30,40)" x="298" font-sizepx="10" y="60" font-family="Tahoma" wrapping="true" cx="10.50" cy="6.16" height="13" alignment="center" vert-align="top" marker="true" text="2" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="74">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label37" static="true">
+   <wgtStyle width="21" font-color="rgb(23,30,40)" x="298" font-sizepx="10" y="84" font-family="Tahoma" wrapping="true" cx="10.50" cy="6.16" height="13" alignment="center" vert-align="top" marker="true" text="3" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="75">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label38" static="true">
+   <wgtStyle width="21" font-color="rgb(23,30,40)" x="298" font-sizepx="10" y="108" font-family="Tahoma" wrapping="true" cx="10.50" cy="6.16" height="13" alignment="center" vert-align="top" marker="true" text="4" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="76">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label39" static="true">
+   <wgtStyle width="21" font-color="rgb(23,30,40)" x="298" font-sizepx="10" y="132" font-family="Tahoma" wrapping="true" cx="10.50" cy="6.16" height="13" alignment="center" vert-align="top" marker="true" text="5" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="77">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label40" static="true">
+   <wgtStyle width="21" font-color="rgb(23,30,40)" x="298" font-sizepx="10" y="156" font-family="Tahoma" wrapping="true" cx="10.50" cy="6.16" height="13" alignment="center" vert-align="top" marker="true" text="6" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="78">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label41" static="true">
+   <wgtStyle width="21" font-color="rgb(23,30,40)" x="298" font-sizepx="10" y="180" font-family="Tahoma" wrapping="true" cx="10.50" cy="6.16" height="13" alignment="center" vert-align="top" marker="true" text="7" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="79">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label42" static="true">
+   <wgtStyle width="21" font-color="rgb(23,30,40)" x="298" font-sizepx="10" y="204" font-family="Tahoma" wrapping="true" cx="10.50" cy="6.16" height="13" alignment="center" vert-align="top" marker="true" text="8" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="80">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label43" static="true">
+   <wgtStyle width="21" font-color="rgb(23,30,40)" x="298" font-sizepx="10" y="36" font-family="Tahoma" wrapping="true" cx="10.50" cy="6.16" height="13" alignment="center" vert-align="top" marker="true" text="1" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="72">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+</wgtPage>

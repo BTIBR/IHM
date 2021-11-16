@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project">
- <object pageName="Config_Leticya" pageSize="320,240" class="PageWgt" scriptFile="Config_Leticya.js" dataWndSize="0,70" downloadPrepDone="true" staticFile="opt/Config_Leticya.png" id="Config_Leticya" staticOptEnable="true">
+ <object pageName="Config_Leticya" pageSize="320,240" class="PageWgt" scriptFile="Config_Leticya.js" dataWndSize="0,70" downloadPrepDone="false" staticFile="opt/Config_Leticya.png" id="Config_Leticya" staticOptEnable="true">
   <wgtStyle width="320" x="0" y="0" height="240" ver="019000975" color="rgb(255,170,0)" v="01.90.00.975"/>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
    <wgtStyle width="0" x="0" y="0" height="0"/>
@@ -10,19 +10,24 @@
     <MLText L1="" id="2"/>
     <MLText L1="Voltar" id="7"/>
     <MLText L1="X" id="8"/>
+    <MLText L1="Op. Manual" id="9"/>
     <MLText L1="Y" id="10"/>
     <MLText L1="Z" id="11"/>
     <MLText L1="Rx" id="12"/>
     <MLText L1="Ry" id="13"/>
     <MLText L1="Rz" id="14"/>
+    <MLText L1="M1" id="16"/>
     <MLText L1="Posições Atuais" id="19"/>
     <MLText L1="Modo Manual" id="20"/>
-    <MLText L1="Joint" id="23"/>
-    <MLText L1="Enable" id="25"/>
+    <MLText L1="M3" id="21"/>
+    <MLText L1="M2" id="22"/>
+    <MLText L1="M4" id="24"/>
+    <MLText L1="M5" id="26"/>
+    <MLText L1="M6" id="27"/>
    </MLTexts>
   </object>
   <object class="GroupWgt" id="BtnStd1" customType="Button">
-   <wgtStyle width="67" x="248" y="193" cx="33.50" cy="17" height="34"/>
+   <wgtStyle width="67" x="258" y="207" cx="33.50" cy="17" height="34"/>
    <links>
     <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -48,91 +53,91 @@
    </object>
   </object>
   <object class="NumericWgt" id="field1">
-   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="right" x="9" y="31" vert-align="top" text="99999" max="1.79769e+308" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-1.79769e+308" width="50" height="20" form="Numeric" font-size="12"/>
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="right" x="45" y="31" vert-align="top" text="99999" max="1.79769e+308" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-1.79769e+308" width="50" height="20" form="Numeric" font-size="12"/>
    <dataLinks>
     <dataLink readWrite="R" tagType="double" attribute="value" tag="lbl_X" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
    </dataLinks>
   </object>
   <object class="NumericWgt" id="field2">
-   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="right" x="9" y="103" vert-align="top" text="99999" max="1.79769e+308" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-1.79769e+308" width="50" height="20" form="Numeric" font-size="12"/>
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="right" x="45" y="103" vert-align="top" text="99999" max="1.79769e+308" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-1.79769e+308" width="50" height="20" form="Numeric" font-size="12"/>
    <dataLinks>
     <dataLink readWrite="R" tagType="double" attribute="value" tag="lbl_Z" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
    </dataLinks>
   </object>
   <object class="NumericWgt" id="field3">
-   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="right" x="9" y="67" vert-align="top" text="99999" max="1.79769e+308" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-1.79769e+308" width="50" height="20" form="Numeric" font-size="12"/>
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="right" x="45" y="67" vert-align="top" text="99999" max="1.79769e+308" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-1.79769e+308" width="50" height="20" form="Numeric" font-size="12"/>
    <dataLinks>
     <dataLink readWrite="R" tagType="double" attribute="value" tag="lbl_Y" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
    </dataLinks>
   </object>
   <object class="NumericWgt" id="field4">
-   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="right" x="9" y="139" vert-align="top" text="99999" max="1.79769e+308" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-1.79769e+308" width="50" height="20" form="Numeric" font-size="12"/>
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="right" x="45" y="139" vert-align="top" text="99999" max="1.79769e+308" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-1.79769e+308" width="50" height="20" form="Numeric" font-size="12"/>
    <dataLinks>
     <dataLink readWrite="R" tagType="double" attribute="value" tag="lbl_Rx" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
    </dataLinks>
   </object>
   <object class="NumericWgt" id="field5">
-   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="right" x="9" y="212" vert-align="top" text="99999" max="1.79769e+308" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-1.79769e+308" width="50" height="20" form="Numeric" font-size="12"/>
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="right" x="45" y="212" vert-align="top" text="99999" max="1.79769e+308" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-1.79769e+308" width="50" height="20" form="Numeric" font-size="12"/>
    <dataLinks>
     <dataLink readWrite="R" tagType="double" attribute="value" tag="lbl_Rz" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
    </dataLinks>
   </object>
   <object class="NumericWgt" id="field6">
-   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="right" x="9" y="175" vert-align="top" text="99999" max="1.79769e+308" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-1.79769e+308" width="50" height="20" form="Numeric" font-size="12"/>
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="23" cy="9" step="1" timeSpec="local" alignment="right" x="45" y="175" vert-align="top" text="99999" max="1.79769e+308" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-1.79769e+308" width="50" height="20" form="Numeric" font-size="12"/>
    <dataLinks>
     <dataLink readWrite="R" tagType="double" attribute="value" tag="lbl_Ry" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
    </dataLinks>
   </object>
   <object class="LabelWgt" id="label1" static="true">
-   <wgtStyle width="38" font-color="rgb(23,30,40)" x="71" font-sizepx="16" y="31" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="X" keypad-type="None" font-size="12"/>
+   <wgtStyle width="38" font-color="rgb(23,30,40)" x="112" font-sizepx="16" y="31" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="M1" keypad-type="None" font-size="12"/>
    <links>
-    <lang class="MLTextLink" textid="8">
+    <lang class="MLTextLink" textid="16">
      <MLFontFamily L1="Tahoma"/>
     </lang>
    </links>
   </object>
   <object class="LabelWgt" id="label2" static="true">
-   <wgtStyle width="38" font-color="rgb(23,30,40)" x="71" font-sizepx="16" y="67" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Y" keypad-type="None" font-size="12"/>
+   <wgtStyle width="38" font-color="rgb(23,30,40)" x="112" font-sizepx="16" y="67" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="M2" keypad-type="None" font-size="12"/>
    <links>
-    <lang class="MLTextLink" textid="10">
+    <lang class="MLTextLink" textid="22">
      <MLFontFamily L1="Tahoma"/>
     </lang>
    </links>
   </object>
   <object class="LabelWgt" id="label3" static="true">
-   <wgtStyle width="38" font-color="rgb(23,30,40)" x="71" font-sizepx="16" y="103" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Z" keypad-type="None" font-size="12"/>
+   <wgtStyle width="38" font-color="rgb(23,30,40)" x="112" font-sizepx="16" y="103" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="M3" keypad-type="None" font-size="12"/>
    <links>
-    <lang class="MLTextLink" textid="11">
+    <lang class="MLTextLink" textid="21">
      <MLFontFamily L1="Tahoma"/>
     </lang>
    </links>
   </object>
   <object class="LabelWgt" id="label4" static="true">
-   <wgtStyle width="38" font-color="rgb(23,30,40)" x="71" font-sizepx="16" y="139" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Rx" keypad-type="None" font-size="12"/>
+   <wgtStyle width="38" font-color="rgb(23,30,40)" x="112" font-sizepx="16" y="139" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="M4" keypad-type="None" font-size="12"/>
    <links>
-    <lang class="MLTextLink" textid="12">
+    <lang class="MLTextLink" textid="24">
      <MLFontFamily L1="Tahoma"/>
     </lang>
    </links>
   </object>
   <object class="LabelWgt" id="label5" static="true">
-   <wgtStyle width="38" font-color="rgb(23,30,40)" x="71" font-sizepx="16" y="175" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Ry" keypad-type="None" font-size="12"/>
+   <wgtStyle width="38" font-color="rgb(23,30,40)" x="112" font-sizepx="16" y="175" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="M5" keypad-type="None" font-size="12"/>
    <links>
-    <lang class="MLTextLink" textid="13">
+    <lang class="MLTextLink" textid="26">
      <MLFontFamily L1="Tahoma"/>
     </lang>
    </links>
   </object>
   <object class="LabelWgt" id="label6" static="true">
-   <wgtStyle width="38" font-color="rgb(23,30,40)" x="71" font-sizepx="16" y="212" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Rz" keypad-type="None" font-size="12"/>
+   <wgtStyle width="38" font-color="rgb(23,30,40)" x="112" font-sizepx="16" y="212" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="M6" keypad-type="None" font-size="12"/>
    <links>
-    <lang class="MLTextLink" textid="14">
+    <lang class="MLTextLink" textid="27">
      <MLFontFamily L1="Tahoma"/>
     </lang>
    </links>
   </object>
   <object class="LabelWgt" id="label7" static="true">
-   <wgtStyle width="92" font-color="rgb(23,30,40)" x="-9" font-sizepx="16" y="3" font-family="Tahoma" font-bold="true" wrapping="true" cx="46" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Posições Atuais" keypad-type="None" font-size="12"/>
+   <wgtStyle width="92" font-color="rgb(23,30,40)" x="5" font-sizepx="16" y="3" font-family="Tahoma" font-bold="true" wrapping="true" cx="46" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Posições Atuais" keypad-type="None" font-size="12"/>
    <links>
     <lang class="MLTextLink" textid="19">
      <MLFontFamily L1="Tahoma"/>
@@ -140,7 +145,7 @@
    </links>
   </object>
   <object class="LabelWgt" id="label8" static="true">
-   <wgtStyle width="117" font-color="rgb(23,30,40)" x="121" font-sizepx="16" y="3" font-family="Tahoma" font-bold="true" wrapping="true" cx="58.50" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Modo Manual" keypad-type="None" font-size="12"/>
+   <wgtStyle width="117" font-color="rgb(23,30,40)" x="126" font-sizepx="16" y="3" font-family="Tahoma" font-bold="true" wrapping="true" cx="58.50" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Modo Manual" keypad-type="None" font-size="12"/>
    <links>
     <lang class="MLTextLink" textid="20">
      <MLFontFamily L1="Tahoma"/>
@@ -148,15 +153,15 @@
    </links>
   </object>
   <object class="GroupWgt" id="BtnStd10" customType="Button">
-   <wgtStyle width="52" x="126" y="27" cx="26" cy="14" height="28"/>
+   <wgtStyle width="52" x="150" y="27" cx="26" cy="14" height="28"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image25" static="true">
     <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd10">
     <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
     <links>
-     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_X+"/>
-     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_X+"/>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M1+"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M1+"/>
     </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label13" static="true">
@@ -172,15 +177,15 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnStd2" customType="Button">
-   <wgtStyle width="52" x="182" y="27" cx="26" cy="14" height="28"/>
+   <wgtStyle width="52" x="206" y="27" cx="26" cy="14" height="28"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image1" static="true">
     <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd2">
     <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
     <links>
-     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_X-"/>
-     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_X-"/>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M1-"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M1-"/>
     </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label10" static="true">
@@ -196,15 +201,15 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnStd3" customType="Button">
-   <wgtStyle width="52" x="126" y="63" cx="26" cy="14" height="28"/>
+   <wgtStyle width="52" x="150" y="63" cx="26" cy="14" height="28"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image3" static="true">
     <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd3">
     <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
     <links>
-     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Y+"/>
-     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Y+"/>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M2+"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M2+"/>
     </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label11" static="true">
@@ -220,15 +225,15 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnStd4" customType="Button">
-   <wgtStyle width="52" x="182" y="63" cx="26" cy="14" height="28"/>
+   <wgtStyle width="52" x="206" y="63" cx="26" cy="14" height="28"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image5" static="true">
     <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd4">
     <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
     <links>
-     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Y-"/>
-     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Y-"/>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M2-"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M2-"/>
     </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label12" static="true">
@@ -244,15 +249,15 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnStd5" customType="Button">
-   <wgtStyle width="52" x="126" y="99" cx="26" cy="14" height="28"/>
+   <wgtStyle width="52" x="150" y="99" cx="26" cy="14" height="28"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image7" static="true">
     <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd5">
     <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
     <links>
-     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Z+"/>
-     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Z+"/>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M3+"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M3+"/>
     </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label14" static="true">
@@ -268,15 +273,15 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnStd6" customType="Button">
-   <wgtStyle width="52" x="182" y="99" cx="26" cy="14" height="28"/>
+   <wgtStyle width="52" x="206" y="99" cx="26" cy="14" height="28"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image9" static="true">
     <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd6">
     <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
     <links>
-     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Z-"/>
-     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Z-"/>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M3-"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M3-"/>
     </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label15" static="true">
@@ -292,15 +297,15 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnStd7" customType="Button">
-   <wgtStyle width="52" x="126" y="135" cx="26" cy="14" height="28"/>
+   <wgtStyle width="52" x="150" y="135" cx="26" cy="14" height="28"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image11" static="true">
     <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd7">
     <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
     <links>
-     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Rx+"/>
-     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Rx+"/>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M4+"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M4+"/>
     </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label16" static="true">
@@ -316,15 +321,15 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnStd8" customType="Button">
-   <wgtStyle width="52" x="182" y="135" cx="26" cy="14" height="28"/>
+   <wgtStyle width="52" x="206" y="135" cx="26" cy="14" height="28"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image13" static="true">
     <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd8">
     <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
     <links>
-     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Rx-"/>
-     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Rx-"/>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M4-"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M4-"/>
     </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label17" static="true">
@@ -340,15 +345,15 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnStd9" customType="Button">
-   <wgtStyle width="52" x="126" y="171" cx="26" cy="14" height="28"/>
+   <wgtStyle width="52" x="150" y="171" cx="26" cy="14" height="28"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image15" static="true">
     <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd9">
     <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
     <links>
-     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Ry+"/>
-     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Ry+"/>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M5+"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M5+"/>
     </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label18" static="true">
@@ -364,15 +369,15 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnStd11" customType="Button">
-   <wgtStyle width="52" x="182" y="171" cx="26" cy="14" height="28"/>
+   <wgtStyle width="52" x="206" y="171" cx="26" cy="14" height="28"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image19" static="true">
     <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd11">
     <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
     <links>
-     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Ry-"/>
-     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Ry-"/>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M5-"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M5-"/>
     </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label19" static="true">
@@ -388,15 +393,15 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnStd12" customType="Button">
-   <wgtStyle width="52" x="126" y="208" cx="26" cy="14" height="28"/>
+   <wgtStyle width="52" x="150" y="208" cx="26" cy="14" height="28"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image21" static="true">
     <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd12">
     <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
     <links>
-     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Rz+"/>
-     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Rz+"/>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M6+"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M6+"/>
     </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label20" static="true">
@@ -412,15 +417,15 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnStd13" customType="Button">
-   <wgtStyle width="52" x="182" y="208" cx="26" cy="14" height="28"/>
+   <wgtStyle width="52" x="206" y="208" cx="26" cy="14" height="28"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rectbar; hmi-type:bkgd" id="image23" static="true">
     <wgtStyle width="52" imagePath="images\frame_rectbar_chrome.svg" enableCache="false" x="0" y="0" cx="26" cy="14" height="28"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:rectbar; hmi-type:btn; type:btn" id="buttonStd13">
     <wgtStyle width="47.53" x="2.24" y="3.68" fill="rgb(255,255,255)" cx="23.82" form="standard" cy="10.37" height="20.63" releasePath="images/btn_plastic_rectbar_1.svg" needlePath="images/btn_plastic_rectbar_2.svg" type="momentary" value="0"/>
     <links>
-     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Rz-"/>
-     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_Rz-"/>
+     <action BitIndex="0" class="SetBitAction" attribute="onMousePress" actionName="SetBit" DataSource="Project:_TagMgr" event="onMouseDown" actionID="1" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M6-"/>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" actionName="ResetBit" DataSource="Project:_TagMgr" event="onMouseUp" actionID="2" SrcType="Tag" actionWgt="_TagMgr" TagName="btn_M6-"/>
     </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label21" static="true">
@@ -435,56 +440,19 @@
     <wgtStyle width="16.77" imagePath="images\IC_ma1_011_rev1.svg" enableCache="false" x="16.22" forcePaint="1" y="6.63" cx="8.54" cy="7" height="14"/>
    </object>
   </object>
-  <object class="GroupWgt" id="BtnIllum4" customType="Button With Light">
-   <wgtStyle width="41" x="261" y="123" cx="20.50" cy="20.50" height="41"/>
-   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image27" static="true">
-    <wgtStyle width="41" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="20.14" cy="20.50" height="41"/>
-   </object>
-   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="btnStd14">
-    <wgtStyle width="29.96" x="5.52" forcePaint="8" y="5.52" fill="rgb(120,120,120)" cx="14.62" form="standard" cy="14.98" height="29.96" releasePath="images/btn_plastic_round_1.svg" needlePath="images/btn_plastic_round_2.svg" type="maintained" value="0"/>
-    <dataLinks>
-     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="btn_EnableJointMode" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
-    </dataLinks>
-   </object>
-   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label22" static="true">
-    <wgtStyle width="26.02" font-color="rgb(40,40,40)" x="7.10" font-sizepx="13" y="8.67" font-family="Tahoma" wrapping="true" cx="17.35" cy="14.98" height="23.65" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
-    <links>
-     <lang class="MLTextLink" textid="2">
-      <MLFontFamily L1="Tahoma"/>
-     </lang>
-    </links>
-   </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image28" static="true">
-    <wgtStyle width="14.19" enableCache="false" x="12.62" y="17.35" cx="7.10" cy="5.52" height="12.62"/>
-   </object>
-   <object class="IndicatorWgt" hmiStyle="type:light" id="inset_oval_ind3">
-    <wgtStyle width="9.46" imagePath="images/li_inset_round.svg" x="18.92" forcePaint="9" y="8.67" cx="4.37" cy="3.94" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="9.46" stroke="rgb(255,255,255)" stroke-width="0"/>
-    <dataLinks>
-     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="btn_EnableJointMode" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
-    </dataLinks>
-   </object>
-  </object>
-  <object class="LabelWgt" id="label23" static="true">
-   <wgtStyle width="53" font-color="rgb(23,30,40)" x="255" font-sizepx="12" y="105" font-family="Tahoma" wrapping="true" cx="26.50" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Joint" keypad-type="None" font-size="9"/>
-   <links>
-    <lang class="MLTextLink" textid="23">
-     <MLFontFamily L1="Tahoma"/>
-    </lang>
-   </links>
-  </object>
   <object class="GroupWgt" id="BtnIllum1" customType="Button With Light">
-   <wgtStyle width="41" x="261" y="44" cx="20.50" cy="20.50" height="41"/>
+   <wgtStyle width="32" x="276" y="79" cx="16" cy="15" height="30"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image29" static="true">
-    <wgtStyle width="41" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="20.14" cy="20.50" height="41"/>
+    <wgtStyle width="32" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="15.72" cy="15" height="30" mtx="1,0,0,0,1,0,0,0,1"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="btnStd15">
-    <wgtStyle width="29.96" x="5.52" forcePaint="8" y="5.52" fill="rgb(120,120,120)" cx="14.62" form="standard" cy="14.98" height="29.96" releasePath="images/btn_plastic_round_1.svg" needlePath="images/btn_plastic_round_2.svg" type="maintained" value="0"/>
+    <wgtStyle width="23.38" x="4.31" forcePaint="8" y="4.04" fill="rgb(120,120,120)" cx="11.41" form="standard" cy="10.96" height="21.92" releasePath="images/btn_plastic_round_1.svg" needlePath="images/btn_plastic_round_2.svg" mtx="1,0,0,0,1,0,0,0,1" type="maintained" value="0"/>
     <dataLinks>
      <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="btn_EnableManualMode" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
     </dataLinks>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label24" static="true">
-    <wgtStyle width="26.02" font-color="rgb(40,40,40)" x="7.10" font-sizepx="13" y="8.67" font-family="Tahoma" wrapping="true" cx="17.35" cy="14.98" height="23.65" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
+    <wgtStyle width="20.31" font-color="rgb(40,40,40)" x="5.54" font-sizepx="13" y="6.34" font-family="Tahoma" wrapping="true" cx="13.54" cy="10.96" height="17.30" alignment="center" vert-align="middle" mtx="1,0,0,0,1,0,0,0,1" text="" keypad-type="None" font-size="10"/>
     <links>
      <lang class="MLTextLink" textid="2">
       <MLFontFamily L1="Tahoma"/>
@@ -492,25 +460,73 @@
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image30" static="true">
-    <wgtStyle width="14.19" enableCache="false" x="12.62" y="17.35" cx="7.10" cy="5.52" height="12.62"/>
+    <wgtStyle width="11.08" enableCache="false" x="9.85" y="12.70" cx="5.54" cy="4.04" height="9.23" mtx="1,0,0,0,1,0,0,0,1"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="type:light" id="inset_oval_ind1">
-    <wgtStyle width="9.46" imagePath="images/li_inset_round.svg" x="18.92" forcePaint="9" y="8.67" cx="4.37" cy="3.94" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="9.46" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <wgtStyle width="7.38" imagePath="images/li_inset_round.svg" x="14.77" forcePaint="9" y="6.34" cx="3.41" cy="2.88" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="6.92" stroke="rgb(255,255,255)" mtx="1,0,0,0,1,0,0,0,1" stroke-width="0"/>
     <dataLinks>
      <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="btn_EnableManualMode" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
     </dataLinks>
    </object>
   </object>
   <object class="LabelWgt" id="label25" static="true">
-   <wgtStyle width="53" font-color="rgb(23,30,40)" x="255" font-sizepx="12" y="26" font-family="Tahoma" wrapping="true" cx="26.50" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Enable" keypad-type="None" font-size="9"/>
+   <wgtStyle width="53" font-color="rgb(23,30,40)" x="265" font-sizepx="10" y="112" font-family="Tahoma" wrapping="true" cx="26.50" cy="5.68" height="12" alignment="center" vert-align="top" marker="true" text="Op. Manual" keypad-type="None" font-size="8"/>
    <links>
-    <lang class="MLTextLink" textid="25">
+    <lang class="MLTextLink" textid="9">
      <MLFontFamily L1="Tahoma"/>
     </lang>
    </links>
   </object>
   <object class="GroupSubscribeWgt" id="Config_Leticya@$GroupSubscrWgt@$0">
    <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="LabelWgt" id="label36" static="true">
+   <wgtStyle width="38" font-color="rgb(23,30,40)" x="0" font-sizepx="16" y="31" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="X" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="8">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label37" static="true">
+   <wgtStyle width="38" font-color="rgb(23,30,40)" x="0" font-sizepx="16" y="67" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Y" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="10">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label38" static="true">
+   <wgtStyle width="38" font-color="rgb(23,30,40)" x="0" font-sizepx="16" y="103" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Z" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="11">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label39" static="true">
+   <wgtStyle width="38" font-color="rgb(23,30,40)" x="0" font-sizepx="16" y="139" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Rx" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="12">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label40" static="true">
+   <wgtStyle width="38" font-color="rgb(23,30,40)" x="0" font-sizepx="16" y="175" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Ry" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="13">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label41" static="true">
+   <wgtStyle width="38" font-color="rgb(23,30,40)" x="0" font-sizepx="16" y="212" font-family="Tahoma" font-bold="true" wrapping="true" cx="19" cy="9" height="19" alignment="center" vert-align="top" marker="true" text="Rz" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="14">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
   </object>
  </object>
 </wgtPage>

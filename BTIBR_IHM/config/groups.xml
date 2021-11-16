@@ -2,7 +2,6 @@
  <group Type="Auto">
   <name>Config_Leticya@$GroupSubscrWgt@$0</name>
   <active>false</active>
-  <tag>btn_EnableJointMode</tag>
   <tag>btn_EnableManualMode</tag>
   <tag>lbl_Rx</tag>
   <tag>lbl_Ry</tag>
@@ -16,5 +15,14 @@
   <active>false</active>
   <tag>lbl_ScrewLenght</tag>
   <tag>lbl_ScrewPitch</tag>
+ </group>
+ <group Type="Auto">
+  <name>Manual_Mode@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>btn_EnableManualMode</tag>
+  <tag>btn_LED_blue</tag>
+  <tag>btn_LED_green</tag>
+  <tag>btn_LED_orange</tag>
+  <tag>btn_LED_red</tag>
  </group>
 </groups>
