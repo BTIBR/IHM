@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project">
- <object pageName="Config_Leticya" pageSize="320,240" class="PageWgt" scriptFile="Config_Leticya.js" dataWndSize="0,70" downloadPrepDone="false" staticFile="opt/Config_Leticya.png" id="Config_Leticya" staticOptEnable="true">
+ <object pageName="Config_Leticya" pageSize="320,240" class="PageWgt" scriptFile="Config_Leticya.js" dataWndSize="0,70" downloadPrepDone="true" staticFile="opt/Config_Leticya.png" id="Config_Leticya" staticOptEnable="true">
   <wgtStyle width="320" x="0" y="0" height="240" ver="019000975" color="rgb(255,170,0)" v="01.90.00.975"/>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
    <wgtStyle width="0" x="0" y="0" height="0"/>
@@ -443,16 +443,16 @@
   <object class="GroupWgt" id="BtnIllum1" customType="Button With Light">
    <wgtStyle width="32" x="276" y="79" cx="16" cy="15" height="30"/>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image29" static="true">
-    <wgtStyle width="32" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="15.72" cy="15" height="30" mtx="1,0,0,0,1,0,0,0,1"/>
+    <wgtStyle width="32" imagePath="images\frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="15.72" cy="15" height="30"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="btnStd15">
-    <wgtStyle width="23.38" x="4.31" forcePaint="8" y="4.04" fill="rgb(120,120,120)" cx="11.41" form="standard" cy="10.96" height="21.92" releasePath="images/btn_plastic_round_1.svg" needlePath="images/btn_plastic_round_2.svg" mtx="1,0,0,0,1,0,0,0,1" type="maintained" value="0"/>
+    <wgtStyle width="23.38" x="4.31" forcePaint="8" y="4.04" fill="rgb(120,120,120)" cx="11.41" form="standard" cy="10.96" height="21.92" releasePath="images/btn_plastic_round_1.svg" needlePath="images/btn_plastic_round_2.svg" type="maintained" value="0"/>
     <dataLinks>
      <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="btn_EnableManualMode" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
     </dataLinks>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label24" static="true">
-    <wgtStyle width="20.31" font-color="rgb(40,40,40)" x="5.54" font-sizepx="13" y="6.34" font-family="Tahoma" wrapping="true" cx="13.54" cy="10.96" height="17.30" alignment="center" vert-align="middle" mtx="1,0,0,0,1,0,0,0,1" text="" keypad-type="None" font-size="10"/>
+    <wgtStyle width="20.31" font-color="rgb(40,40,40)" x="5.54" font-sizepx="13" y="6.34" font-family="Tahoma" wrapping="true" cx="13.54" cy="10.96" height="17.30" alignment="center" vert-align="middle" text="" keypad-type="None" font-size="10"/>
     <links>
      <lang class="MLTextLink" textid="2">
       <MLFontFamily L1="Tahoma"/>
@@ -460,10 +460,10 @@
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image30" static="true">
-    <wgtStyle width="11.08" enableCache="false" x="9.85" y="12.70" cx="5.54" cy="4.04" height="9.23" mtx="1,0,0,0,1,0,0,0,1"/>
+    <wgtStyle width="11.08" enableCache="false" x="9.85" y="12.70" cx="5.54" cy="4.04" height="9.23"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="type:light" id="inset_oval_ind1">
-    <wgtStyle width="7.38" imagePath="images/li_inset_round.svg" x="14.77" forcePaint="9" y="6.34" cx="3.41" cy="2.88" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="6.92" stroke="rgb(255,255,255)" mtx="1,0,0,0,1,0,0,0,1" stroke-width="0"/>
+    <wgtStyle width="7.38" imagePath="images/li_inset_round.svg" x="14.77" forcePaint="9" y="6.34" cx="3.41" cy="2.88" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="6.92" stroke="rgb(255,255,255)" stroke-width="0"/>
     <dataLinks>
      <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="btn_EnableManualMode" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
     </dataLinks>

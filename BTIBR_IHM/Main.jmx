@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project">
- <object pageName="Main" pageSize="320,240" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" staticFile="opt/Main.png" id="Main" staticOptEnable="true">
+ <object pageName="Main" pageSize="320,240" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" staticFile="opt/Main.png" id="Main" staticOptEnable="true">
   <wgtStyle width="320" x="0" y="0" height="240" ver="019000975" color="rgb(255,170,0)" v="01.90.00.975"/>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
    <wgtStyle width="0" x="0" y="0" height="0"/>
@@ -7,11 +7,11 @@
     <lang langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
    </langs>
    <MLTexts>
+    <MLText L1="" id="4"/>
     <MLText L1="Leticya" id="0"/>
     <MLText L1="Start Teste" id="1"/>
     <MLText L1="Modo &#xa;Manual" id="2"/>
     <MLText L1="Teste" id="3"/>
-    <MLText L1="" id="4"/>
     <MLText L1="Scatter Diagram" id="22"/>
    </MLTexts>
   </object>
@@ -79,7 +79,7 @@
     <attr attrName="ymax" alias="XYCurveWgt1.maxy;XYCurveWgt2.maxy;XYCurveWgt3.maxy;XYCurveWgt4.maxy;XYCurveWgt5.maxy;LabelsWgt1.max"/>
    </links>
    <object class="LabelWgt" id="label3" static="true">
-    <wgtStyle width="256.29" x="52.81" font-sizepx="16" y="0" font-family="Tahoma" font-bold="true" cx="126.32" cy="9.33" height="19.70" alignment="center" vert-align="top" text="Teste de Pré-Carga" keypad-type="None" font-size="12"/>
+    <wgtStyle width="256.29" x="52.81" font-sizepx="16" y="0" font-family="Tahoma" font-bold="true" cx="126.32" cy="9.33" height="19.70" alignment="center" vert-align="top" text="Scatter Diagram" keypad-type="None" font-size="12"/>
     <links>
      <lang class="MLTextLink" textid="22">
       <MLFontFamily L1="Tahoma"/>
@@ -157,7 +157,7 @@
    </links>
   </object>
   <object class="GroupWgt" id="BtnStd2" customType="Button">
-   <wgtStyle width="41" x="195" y="204" cx="20.50" cy="19.50" height="39"/>
+   <wgtStyle width="41" x="195" forcePaint="1" y="204" cx="20.50" cy="19.50" height="39"/>
    <links>
     <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -165,7 +165,7 @@
     <wgtStyle width="41" imagePath="images\frame_rrect_chrome.svg" enableCache="false" x="0" y="0" visibility="false" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="32.92" cy="34.06" bdrSize="0.24,0.24,0.21,0.19" height="39" bdrEdges="0.13,0.13,0.13,0.13"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd2">
-    <wgtStyle width="30.21" x="5.52" y="5.25" bdrImageSize="38.00,37.00" fill="rgb(255,255,255)" cx="25.31" form="standard" cy="25.59" bdrSize="0.17,0.15,0.15,0.14" height="28.50" releasePath="images/btn_shiney_rrect_1.svg" needlePath="images/btn_shiney_rrect_2.svg" type="momentary" value="0"/>
+    <wgtStyle width="30.21" x="5.52" forcePaint="1" y="5.25" bdrImageSize="38.00,37.00" fill="rgb(255,255,255)" cx="25.31" form="standard" cy="25.59" bdrSize="0.17,0.15,0.15,0.14" height="28.50" releasePath="images/btn_shiney_rrect_1.svg" needlePath="images/btn_shiney_rrect_2.svg" type="momentary" value="0"/>
     <links>
      <action pageName="Manual_Mode.jmx" class="LoadPageAction" attribute="onMouseClick" actionName="LoadPage" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
     </links>
