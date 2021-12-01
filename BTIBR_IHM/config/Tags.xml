@@ -2,21 +2,21 @@
 <tags>
     <tag>
         <name>gph_Preload</name>
-        <resourceLocator>prot1://1?HREG?400006?short</resourceLocator>
+        <resourceLocator>prot1://0?HREG?400006?int</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://gph_Preload?short</simulator>
+        <simulator>VRBL://gph_Preload?int</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
         <name>gph_Distance</name>
-        <resourceLocator>prot1://1?HREG?400002?short</resourceLocator>
+        <resourceLocator>prot1://0?HREG?400002?int</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://gph_Distance?short</simulator>
+        <simulator>VRBL://gph_Distance?int</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>

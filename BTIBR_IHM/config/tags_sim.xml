@@ -4,7 +4,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://gph_Preload?short</resourceLocator>
+    <resourceLocator>VRBL://gph_Preload?int</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
@@ -13,7 +13,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://gph_Distance?short</resourceLocator>
+    <resourceLocator>VRBL://gph_Distance?int</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>

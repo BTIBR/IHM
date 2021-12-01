@@ -1,1 +1,18 @@
-<trends/>
+<trends>
+ <trend>
+  <name>Trend1</name>
+  <source>gph_Preload</source>
+  <samplingTime>1000</samplingTime>
+  <active>true</active>
+  <compressed>false</compressed>
+  <size>40000</size>
+  <trigger></trigger>
+  <deviation>
+   <lowLimit>0</lowLimit>
+   <highLimit>0</highLimit>
+  </deviation>
+  <autodumptrend>false</autodumptrend>
+  <dataStorageLoc></dataStorageLoc>
+  <storageDevice>0</storageDevice>
+ </trend>
+</trends>
