@@ -17,6 +17,11 @@
   <tag>lbl_ScrewPitch</tag>
  </group>
  <group Type="Auto">
+  <name>Main@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>gph_Preload</tag>
+ </group>
+ <group Type="Auto">
   <name>Manual_Mode@$GroupSubscrWgt@$0</name>
   <active>false</active>
   <tag>btn_EnableManualMode</tag>
@@ -24,5 +29,6 @@
   <tag>btn_LED_green</tag>
   <tag>btn_LED_orange</tag>
   <tag>btn_LED_red</tag>
+  <tag>gph_Preload</tag>
  </group>
 </groups>

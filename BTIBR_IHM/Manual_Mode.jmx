@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project">
- <object pageName="Manual_Mode" pageSize="320,240" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" staticFile="opt/Manual_Mode.png" id="Manual_Mode" staticOptEnable="true">
+ <object pageName="Manual_Mode" pageSize="320,240" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" staticFile="opt/Manual_Mode.png" id="Manual_Mode" staticOptEnable="true">
   <wgtStyle width="320" x="0" y="0" height="240" ver="019000975" color="rgb(255,170,0)" v="01.90.00.975"/>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
    <wgtStyle width="0" x="0" y="0" height="0"/>
@@ -8,6 +8,8 @@
    </langs>
    <MLTexts>
     <MLText L1="" id="1"/>
+    <MLText L1="Label" id="6"/>
+    <MLText L1="g" id="8"/>
     <MLText L1="Op. Manual" id="24"/>
     <MLText L1="Voltar" id="38"/>
     <MLText L1="Vermelho" id="44"/>
@@ -798,6 +800,25 @@
    <wgtStyle width="21" font-color="rgb(23,30,40)" x="298" font-sizepx="10" y="36" font-family="Tahoma" wrapping="true" cx="10.50" cy="6.16" height="13" alignment="center" vert-align="top" marker="true" text="1" keypad-type="None" font-size="8"/>
    <links>
     <lang class="MLTextLink" textid="72">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label44">
+   <wgtStyle width="38" font-color="rgb(23,30,40)" x="5" forcePaint="8" font-sizepx="16" y="215" font-family="Tahoma" wrapping="true" cx="19" cy="9" height="19" vert-align="top" marker="true" text="Label" keypad-type="None" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="text" tag="gph_Preload" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="6">
+     <MLFontFamily L1="Tahoma"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label45" static="true">
+   <wgtStyle width="38" font-color="rgb(23,30,40)" x="45" font-sizepx="16" y="215" font-family="Tahoma" wrapping="true" cx="19" cy="9" height="19" vert-align="top" marker="true" text="g" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="8">
      <MLFontFamily L1="Tahoma"/>
     </lang>
    </links>
