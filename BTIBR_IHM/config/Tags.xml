@@ -222,21 +222,21 @@
     </tag>
     <tag>
         <name>lbl_ScrewPitch</name>
-        <resourceLocator>prot1://1?HREG?400022?short</resourceLocator>
+        <resourceLocator>prot1://0?HREG?400022?int</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://lbl_ScrewPitch?short</simulator>
+        <simulator>VRBL://lbl_ScrewPitch?int</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>
     <tag>
         <name>lbl_ScrewLenght</name>
-        <resourceLocator>prot1://1?HREG?400026?short</resourceLocator>
+        <resourceLocator>prot1://0?HREG?400026?int</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://lbl_ScrewSize?short</simulator>
+        <simulator>VRBL://lbl_ScrewLenght?int</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
     </tag>

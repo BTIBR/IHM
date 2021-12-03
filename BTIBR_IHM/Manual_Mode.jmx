@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project">
- <object pageName="Manual_Mode" pageSize="320,240" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" staticFile="opt/Manual_Mode.png" id="Manual_Mode" staticOptEnable="true">
+ <object pageName="Manual_Mode" pageSize="320,240" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" staticFile="opt/Manual_Mode.png" id="Manual_Mode" staticOptEnable="true">
   <wgtStyle width="320" x="0" y="0" height="240" ver="019000975" color="rgb(255,170,0)" v="01.90.00.975"/>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
    <wgtStyle width="0" x="0" y="0" height="0"/>

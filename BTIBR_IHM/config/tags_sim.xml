@@ -202,7 +202,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://lbl_ScrewPitch?short</resourceLocator>
+    <resourceLocator>VRBL://lbl_ScrewPitch?int</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>
@@ -211,7 +211,7 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://lbl_ScrewSize?short</resourceLocator>
+    <resourceLocator>VRBL://lbl_ScrewLenght?int</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
 </tag>

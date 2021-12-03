@@ -1,5 +1,5 @@
 <wgtPage projectType="HMI Project">
- <object pageName="Main" pageSize="320,240" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" staticFile="opt/Main.png" id="Main" staticOptEnable="true">
+ <object pageName="Main" pageSize="320,240" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" staticFile="opt/Main.png" id="Main" staticOptEnable="true">
   <wgtStyle width="320" x="0" y="0" height="240" ver="019000975" color="rgb(255,170,0)" v="01.90.00.975"/>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
    <wgtStyle width="0" x="0" y="0" height="0"/>
@@ -168,7 +168,7 @@
     <wgtStyle cx="19.09" startAngle="-10" cy="84.23" endAngle="200" reverseScale="true" tickSize2="15" x="53.69" y="22.11" max="100" stroke-width="2" width="22.67" stroke-linecap="butt" tickSize="7" tickFreq="4" height="169.51" labelFreq="6" stroke="rgb(40,40,40)" form="vertical"/>
    </object>
    <object class="LabelsWgt" id="labels3" static="true">
-    <wgtStyle font-family="Tahoma" font-sizepx="10" cx="23.86" startAngle="-20" cy="92.65" timeSpec="local" reverseScale="true" dataFormat="#" endAngle="185" x="0" useTextAlign="true" y="14.74" rotated="true" vert-align="top" max="400" align="1" font-color="rgb(40,40,40)" min="-400" width="50.11" labelNames="" tickFreq="5" height="186.36" labelFreq="6" form="vertical" font-size="8"/>
+    <wgtStyle font-family="Tahoma" font-sizepx="10" cx="23.86" startAngle="-20" cy="92.65" timeSpec="local" reverseScale="true" dataFormat="#" endAngle="185" x="0" useTextAlign="true" y="14.74" rotated="true" vert-align="top" max="100" align="1" font-color="rgb(40,40,40)" min="-100" width="50.11" labelNames="" tickFreq="5" height="186.36" labelFreq="6" form="vertical" font-size="8"/>
    </object>
    <object class="LabelsWgt" id="labels4">
     <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="8" cx="145.56" startAngle="-20" cy="10.53" timeSpec="local" dataFormat="hh:mm:ss" endAngle="185" x="53.69" y="197.94" rotated="true" vert-align="top" max="100" font-color="rgb(40,40,40)" width="292.31" labelNames="" tickFreq="5" height="21.06" labelFreq="1" form="horizontal" dataType="Time" font-size="6"/>
@@ -191,7 +191,7 @@
     </dataLinks>
    </object>
    <object class="TrendCurveWgt" id="TrendCurve2">
-    <wgtStyle width="252.94" x="76.36" forcePaint="8" drawType="0" y="23.16" cx="125.28" cy="83.70" height="168.46" frame="300" stroke="rgb(255,0,0)" type="line" y0="-400" max="40" y1="400" stroke-width="2"/>
+    <wgtStyle width="252.94" x="76.36" forcePaint="8" drawType="0" y="23.16" cx="125.28" cy="83.70" height="168.46" frame="300" stroke="rgb(255,0,0)" type="line" y0="-100" max="40" y1="100" stroke-width="2"/>
     <dataLinks>
      <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="TrendBufferWgt2"/>
      <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="TrendWindow2"/>
